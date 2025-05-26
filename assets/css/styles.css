@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Neris Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neris Thin'), url('../fonts/Neris-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Neris Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neris Light'), url('../fonts/Neris-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Neris SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neris SemiBold'), url('../fonts/Neris-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Neris Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neris Black'), url('../fonts/Neris-Black.woff') format('woff');
+}
+
+* {
+    font-family: 'Inter';
+    color: #212121;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header {
+    max-width: 1824px;
+    margin: auto;
+    padding: 24px 0;
+}
+
+header .top_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+header .top_block .menu ul {
+    display: flex;
+    gap: 32px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+header .top_block .right_btns {
+    display: flex
+;
+    align-items: center;
+    gap: 16px;
+}
+
+header .location a {
+    display: flex
+;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.btn_default {
+    font-size: 20px;
+    font-weight: 600;
+    color: #024702;
+    padding: 16px 30px;
+    border: 1px solid #024702;
+    border-radius: 8px;
+}
+
+header .bottom_block {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .bottom_block .left_block {
+    display: flex
+;
+    align-items: center;
+    gap: 24px;
+}
+
+.dropdown_catalog {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    width: 1540px;
+    border-radius: 20px;
+}
+
+.btn_catalog {
+    background: #024702;
+    padding: 17px 30px;
+    border-radius: 8px;
+}
+
+.btn_catalog span {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.head__search {
+    min-width: 698px;
+    position: relative;
+}
+
+.head__search input {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.head__search button {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.head__links {
+    font-size: 18px;
+    font-weight: 300;
+    display: flex
+;
+    align-items: center;
+    gap: 15px;
+}
+
+.head__links a {
+    display: flex
+;
+    gap: 6px;
+    align-items: center;
+}
+
+.head__catalog_menu:hover .dropdown_catalog {
+    display: block;
+}
+
+.menu_catalog_link li .dropdown_catalog_content {
+    position: absolute;
+    display: none;
+}
+
+.menu_catalog_link {
+    width: 460px;
+    border: 1px solid #C9C9C999;
+    border-radius: 20px;
+    position: relative;
+    padding: 28px 0;
+}
+
+.cert_catalog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #F1F6F7;
+    gap: 10px;
+    padding: 14px 26px;
+    border-radius: 20px;
+    max-width: 394px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 12px;
+}
+
+.cert_catalog span {
+    font-family: 'Neris SemiBold';
+}
+
+.menu_catalog_link>ul>li {
+    padding: 0 12px;
+}
+
+.menu_catalog_link>ul>li a {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 26px 14px;
+    width: 410px;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.menu_catalog_link>ul>li a:hover {
+    background: #F8F8F8;
+}
+
+.menu_catalog_link>ul>li:hover .dropdown_catalog_content {
+    display: block;
+}
+
+.dropdown_catalog_content {
+    width: calc(1540px - 460px);
+    border: 1px solid #C9C9C999;
+    border-radius: 20px;
+    margin-left: -15px;
+    left: 100%;
+    top: -1px;
+    padding-left: 54px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+    height: calc(100% + 1px);
+}
+
+.dropdown_catalog_content li.parent_link>a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 16px;
+    width: fit-content;
+}
+
+.dropdown_catalog_content .children_link a {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+    padding-bottom: 8px;
+}
+
+.dropdown_catalog_content a:hover {
+    background: none !important;
+}
+
+.dropdown_catalog_content .children_link {
+    max-height: 115px;
+    display: block;
+    overflow: hidden;
+}
+
+.menu_catalog_link>ul>li.open .dropdown_catalog_content {
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu_catalog_link>ul>li.open .dropdown_catalog_content>ul {
+    max-width: 250px;
+    height: fit-content;
+}
+
+.show_more_link_menu {
+    font-size: 18px;
+    font-weight: 300;
+    color: #8D8D8D;
+    border-bottom: 1px solid #C9C9C999;
+    width: fit-content;
+    padding-bottom: 2px;
+}
