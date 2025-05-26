@@ -2,6 +2,15 @@ $('.menu_catalog_link>ul>li').hover(function () {
     $(this).toggleClass('open');
 })
 
+$(document).ready(function () {
+    var $block = $('header .bottom_block');
+    var blockTop = $block.offset().top - $(window).scrollTop(); // расстояние от верха блока до верха окна
+    $(window).on('resize', function() {
+        $('.dropdown_catalog').css('height', $(window).height() - blockTop);
+    })
+    $('.dropdown_catalog').css('height', $(window).height() - blockTop - 180);
+})
+
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('.phone'), function(input) {
         var keyCode;
