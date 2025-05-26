@@ -39,10 +39,10 @@
                 <img src="assets/img/logo.png" alt="">
             </a>
             <div class="head__catalog_menu">
-                <div class="btn_catalog">
+                <a href="" class="btn_catalog">
                     <span>Каталог</span>
                     <img src="assets/svg/drop_catalog.svg" alt="" class="svg">
-                </div>
+                </a>
                 <div class="dropdown_catalog">
                     <div class="menu_catalog_link">
                         <a href="" class="cert_catalog">
@@ -522,3 +522,4 @@
         </div>
     </div>
 </header>
+<div class="main">

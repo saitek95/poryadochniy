@@ -6,10 +6,29 @@ $(document).ready(function () {
     var $block = $('header .bottom_block');
     var blockTop = $block.offset().top - $(window).scrollTop(); // расстояние от верха блока до верха окна
     $(window).on('resize', function() {
-        $('.dropdown_catalog').css('height', $(window).height() - blockTop);
+        $('.menu_catalog_link').css('height', $(window).height() - blockTop - 100);
     })
-    $('.dropdown_catalog').css('height', $(window).height() - blockTop - 180);
+    $('.menu_catalog_link').css('height', $(window).height() - blockTop - 100);
 })
+
+$(document).on('click', '.show_more_link_menu', function () {
+    $(this).siblings('.children_link').toggleClass('show');
+})
+
+$(document).on('click', '.add_in_basket', function () {
+    $(this).children('span').hide();
+    $(this).children('.in_basketed').addClass('show');
+    $(this).addClass('no_active')
+})
+
+var mainSlide = new Swiper(".main_slide", {
+    navigation: {
+        nextEl: ".main_slide .btn_next",
+        prevEl: ".main_slide .btn_prev",
+    },
+    loop: true,
+    spaceBetween: 30,
+});
 
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('.phone'), function(input) {
