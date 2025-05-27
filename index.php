@@ -521,11 +521,145 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
+</div>
+<div class="main_popular_category">
+    <p class="title">
+        Популярные категории
+    </p>
+    <div class="big_block">
+        <a href="" style="background: url('assets/img/a72efa39-711f-40db-bd0d-547b9e8b8f73 1.png'), #F1F6F7">
+            <p class="title">
+                Товары для кухни
+            </p>
+        </a>
+    </div>
+    <div class="small_block">
+        <a href="" style="background: url('assets/img/image 23.png'), #F1F6F7">
+            <p class="title">
+                Гардероб
+            </p>
+        </a>
+        <a href="" style="background: url('assets/img/dp4ykohoqg1on6x7lecb11c91v05ccm4 1 1.png'), #7BD70033">
+            <p class="title">
+                Контейнеры
+                Мусорные ведра
+                Баки
+            </p>
+        </a>
+        <a href="" style="background: url('assets/img/korzina_art_113-1495_21-6_dlya_igrushek.png'), #DFD2C24D">
+            <p class="title">
+                Детские товары
+            </p>
+        </a>
+    </div>
+    <div class="small_block reverse">
+        <a href="" style="background: url('assets/img/small_block_reverse_1.png'), #DFD2C233">
+            <p class="title">
+                Стелажи и Универсальные системы хранения
+            </p>
+        </a>
+        <a href="" style="background: url('assets/img/htn7pa0ehexa7z516hnm6huagg50njan 1 1.png'), #F8F8F8">
+            <p class="title">
+                Для уюта
+            </p>
+        </a>
+        <a href="" style="background: url('assets/img/small_block_reverse_3.png'), #F1F6F7">
+            <p class="title">
+                Новинки
+            </p>
+        </a>
+    </div>
+    <div class="popular_category_list">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_1.png" alt="">
+                    </div>
+                    <p class="title">Прихожая</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_2.png" alt="">
+                    </div>
+                    <p class="title">Для уборки</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_3.png" alt="">
+                    </div>
+                    <p class="title">Туалетный столик</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_4.png" alt="">
+                    </div>
+                    <p class="title">Ванная</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_5.png" alt="">
+                    </div>
+                    <p class="title">Для стирки</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_6.png" alt="">
+                    </div>
+                    <p class="title">Для медикаментов</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_7.png" alt="">
+                    </div>
+                    <p class="title">Подарочные сертификаты</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img">
+                        <img src="assets/img/popular_category_list_8.png" alt="">
+                    </div>
+                    <p class="title">Копилки Купюрницы</p>
+                </a>
+            </li>
+        </ul>
+        <a href="" class="btn_default">Смотреть все категории</a>
+    </div>
+</div>
+<div class="main_stocks">
+    <p class="title">Акции</p>
+    <div class="grid_2">
+        <a href="" class="item" style="background-image: url('assets/img/stocks_background.png')">
+            <p class="name">
+                Большие<br>
+                Новогодние скидки
+            </p>
+            <span>Лучшие подарки своим близким</span>
+        </a>
+        <a href="" class="item" style="background-image: url('assets/img/stocks_background.png')">
+            <p class="name">
+                Большие<br>
+                Новогодние скидки
+            </p>
+            <span>Лучшие подарки своим близким</span>
+        </a>
+    </div>
+    <a href="" class="btn_default">Cмотреть все акции</a>
 </div>
 <?php include "footer.php"; ?>
