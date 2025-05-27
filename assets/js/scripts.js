@@ -15,6 +15,16 @@ $(document).on('click', '.show_more_link_menu', function () {
     $(this).siblings('.children_link').toggleClass('show');
 })
 
+$(document).on('click', '.sort_block .sort>a', function (e) {
+    e.preventDefault();
+    $(this).siblings('.sort_dropdown').fadeToggle(100);
+})
+
+$(document).on('click', '.page_count_element>a', function (e) {
+    e.preventDefault();
+    $(this).siblings('.sort_dropdown').fadeToggle(100);
+})
+
 $(document).on('click', '.add_in_basket', function () {
     $(this).children('span').hide();
     $(this).children('.in_basketed').addClass('show');

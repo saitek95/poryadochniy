@@ -1,6 +1,68 @@
 </div>
 <footer>
-
+    <div class="max_width_theme">
+        <div class="top_block">
+            <div class="col">
+                <p class="title">Навигация</p>
+            </div>
+            <div class="col">
+                <p class="title">Контакты</p>
+            </div>
+            <a href="" class="btn_up">
+                <p class="name">Наверх</p>
+                <img src="assets/svg/btn_up.svg" alt="" class="svg">
+            </a>
+        </div>
+        <div class="bottom_block">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">Оплата и доставка</a>
+                    </li>
+                    <li>
+                        <a href="">Акции</a>
+                    </li>
+                    <li>
+                        <a href="">Компания</a>
+                    </li>
+                    <li>
+                        <a href="">Работа</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li>
+                        <img src="assets/svg/bx-map.svg" alt="" class="svg">
+                        г. Махачкала, улица Гагарина, 13В
+                    </li>
+                    <li>
+                        <img src="assets/svg/bx-phone-call.svg" alt="" class="svg">
+                        <a href="tel:+7 988 292-68-99">+7 988 292-68-99</a>
+                    </li>
+                    <li>
+                        <img src="assets/svg/bx-at.svg" alt="" class="svg">
+                        <a href="mailto:poryadochniy.shop@gmail.com">poryadochniy.shop@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info_block">
+            <a href="/" class="left_block">
+                <img src="assets/img/logo.png" alt="">
+                <p>2024 © <span>Все права защищены</span></p>
+            </a>
+            <div class="right_block">
+                <a href="">Пользовательское соглашение</a>
+                <a href="">Политика обработки данных</a>
+                <a href="">Публичная оферта</a>
+            </div>
+        </div>
+    </div>
+    <img src="assets/svg/нижний%20элемент%201.svg" alt="" class="svg">
 </footer>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

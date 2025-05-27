@@ -15,7 +15,6 @@
     src: local('../fonts/Neris Light'), url('../fonts/Neris-Light.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'Neris SemiBold';
     font-style: normal;
@@ -40,8 +39,13 @@
     outline: none;
 }
 
-body {
-    overflow-x: hidden;
+::-webkit-scrollbar {
+    width: 4px;
+    background: #C9C9C999;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #024702;
 }
 
 ul, li {
@@ -69,15 +73,13 @@ header .top_block .menu ul {
 }
 
 header .top_block .right_btns {
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 16px;
 }
 
 header .location a {
-    display: flex
-;
+    display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 300;
@@ -143,25 +145,26 @@ header .location a {
 }
 
 header .bottom_block {
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header .bottom_block .left_block {
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.head__catalog_menu {
+    position: relative;
 }
 
 .dropdown_catalog {
     display: none;
     position: absolute;
-    left: 50%;
+    left: 150px;
     transform: translate(-50%, 0px);
-    width: 1540px;
     border-radius: 20px;
     z-index: 3;
 }
@@ -223,21 +226,27 @@ header .bottom_block .left_block {
 .head__links {
     font-size: 18px;
     font-weight: 300;
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .head__links a {
-    display: flex
-;
+    display: flex;
     gap: 6px;
     align-items: center;
 }
 
 .head__catalog_menu:hover .dropdown_catalog {
     display: block;
+}
+
+.callback_block_messengers {
+    display: flex
+;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
 }
 
 .menu_catalog_link {
@@ -445,8 +454,7 @@ header .bottom_block .left_block {
 }
 
 .tabs_products .tabs_container ul {
-    display: flex
-;
+    display: flex;
     gap: 16px;
 }
 
@@ -477,6 +485,13 @@ header .bottom_block .left_block {
     gap: 24px;
 }
 
+.grid_3 {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
 .grid_5 {
     display: grid
 ;
@@ -489,6 +504,7 @@ header .bottom_block .left_block {
     border-radius: 16px;
     box-shadow: 0px 4px 4px 0px #4A4A4A40;
     position: relative;
+    overflow: hidden;
 }
 
 .sticker.bestsellers {
@@ -499,8 +515,7 @@ header .bottom_block .left_block {
     left: 16px;
     padding: 8px 16px;
     border-radius: 7px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 6px;
 }
@@ -529,8 +544,7 @@ header .bottom_block .left_block {
 
 .product .prices_block {
     padding: 16px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -583,18 +597,8 @@ header .bottom_block .left_block {
     fill: #DA0916;
 }
 
-.product .add_in_basket {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 16px;
-    background: #024702;
-    border: 1px solid #024702;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
 .product .add_in_basket>span {
-    color: #FFF;
+    color: #024702;
 }
 
 .product .add_in_basket .in_basketed {
@@ -605,7 +609,6 @@ header .bottom_block .left_block {
     font-size: 20px;
     font-weight: 600;
     margin: 0 16px;
-    background: #024702;
     border: 1px solid #024702;
     border-radius: 8px;
     transition: 0.2s;
@@ -615,15 +618,18 @@ header .bottom_block .left_block {
     cursor: pointer;
     display: block;
     margin-bottom: 24px;
+    background: #FFF;
+    border: 1px solid #024702;
+    transition: 0.2s;
 }
 
 .product .add_in_basket:hover {
-    color: #024702;
-    background: #FFF;
+    color: #FFF;
+    background: #024702;
 }
 
 .product .add_in_basket:hover>span {
-    color: #024702;
+    color: #FFF;
 }
 
 .product .add_in_basket .in_basketed.show {
@@ -638,8 +644,7 @@ header .bottom_block .left_block {
 }
 
 .product .add_in_basket .in_basketed .input_count {
-    display: flex
-;
+    display: flex;
     width: 69px;
 }
 
@@ -730,8 +735,7 @@ header .bottom_block .left_block {
 }
 
 .popular_category_list ul {
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -798,4 +802,579 @@ header .bottom_block .left_block {
 
 .main_stocks .grid_2 {
     margin-bottom: 50px;
+}
+
+.max_width_theme {
+    max-width: 1620px;
+    padding: 0px 12px;
+    margin: auto;
+}
+
+footer {
+    position: relative;
+}
+
+footer>svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+footer .top_block {
+    border-bottom: 1px solid #21212145;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .top_block .col {
+    width: 25%;
+    float: left;
+}
+
+footer .top_block .col .title {
+    font-size: 20px;
+    font-family: 'Neris Light';
+}
+
+.btn_up {
+    display: flex;
+    width: fit-content;
+    float: right;
+    gap: 8px
+}
+
+.btn_up .name {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer .bottom_block {
+    display: inline-block;
+    width: 100%;
+}
+
+footer .bottom_block .menu {
+    width: 25%;
+    float: left;
+    padding-top: 30px;
+}
+
+footer .bottom_block .menu ul {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+footer .bottom_block .menu ul a,
+footer .bottom_block .contacts ul a {
+    font-size: 18px;
+    font-family: 'Neris Light';
+}
+
+footer .bottom_block .contacts {
+    float: left;
+    padding-top: 30px;
+}
+
+footer .bottom_block .contacts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer .info_block {
+    padding-top: 82px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 27px;
+}
+
+footer .info_block .left_block {
+    float: left;
+    width: 25%;
+}
+
+footer .info_block .left_block p {
+    margin-top: 4px;
+    font-size: 16px;
+    font-family: 'Neris Light';
+}
+
+footer .info_block .left_block p span {
+    font-size: 14px;
+    font-family: 'Neris Light';
+}
+
+footer .info_block .right_block {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .info_block .right_block {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer .info_block .right_block a {
+    font-size: 16px;
+    font-family: 'Neris Light';
+}
+
+.breadcrumb ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.breadcrumb ul li a {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.breadcrumb ul li:not(a) {
+    font-size: 18px;
+    font-weight: 300;
+    color: #024702;
+}
+
+.catalog_list {
+    display: grid
+;
+    grid-template-columns: repeat(6, auto);
+    gap: 24px;
+    padding-bottom: 50px;
+}
+
+.catalog_list .big_block a {
+    padding: 24px;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #C9C9C999;
+    background-position: right bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+.catalog_list .big_block a p {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Manrope';
+    max-width: 176px;
+}
+
+.catalog_list .big_block {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.catalog_list .small_block ,
+.catalog_list .long_block {
+    height: 152px;
+}
+
+.catalog_list .small_block {
+    width: 250px;
+}
+
+.catalog_list .small_block a,
+.catalog_list .long_block a{
+    padding: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+}
+
+.catalog_list .long_block {
+    grid-column: span 2;
+}
+
+.catalog_list .long_block .name,
+.catalog_list .small_block .name {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 152px;
+}
+
+.catalog_list .big_block.with_img p {
+    color: #FFF;
+    font-size: 32px;
+    max-width: 200px;
+}
+
+.products_container .left_block {
+    width: 387px;
+}
+
+.page_title {
+    font-size: 36px;
+    font-family: 'Neris Semibold';
+}
+
+.products_container .page_title {
+    margin-bottom: 65px;
+}
+
+.products_container .filter {
+    padding: 32px 24px;
+    border: 1px solid #C9C9C999;
+    border-radius: 20px;
+}
+
+.products_container .filter .top_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.products_container .filter .top_block .title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.products_container .filter .top_block .btn_default {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px 26px;
+}
+
+.filter_price .name {
+    font-size: 20px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 24px;
+}
+
+.filter_price .item {
+    display: flex
+;
+    flex-wrap: wrap;
+}
+
+.filter_price .item .inputs {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px;
+    margin-bottom: 10px;
+}
+
+.filter_price .item .inputs {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.filter_price .item .inputs input[type="text"] {
+    width: 100%;
+    border: 1px solid #E2E2E2;
+    border-radius: 7px;
+    padding: 10px 29px;
+}
+
+.price_bar {
+    height: 2px;
+    width: 100%;
+    background: #C9C9C999;
+    position: relative;
+}
+
+.range_price {
+    position: relative;
+    width: 100%;
+}
+
+.range_price_slider {
+    position: relative;
+    width: 100%;
+}
+
+.range_price_slider .left {
+    width: 20px;
+    height: 20px;
+    background: #024702;
+    position: absolute;
+    top: 50%;
+    display: block;
+    border-radius: 100%;
+    transform: translate(0px, -50%);
+}
+
+.range_price_slider .right {
+    width: 20px;
+    height: 20px;
+    background: #024702;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    display: block;
+    border-radius: 100%;
+    transform: translate(0px, -50%);
+}
+
+.price_bar:after {
+    content: '';
+    background: #024702;
+    width: 200px;
+    display: block;
+    height: 2px;
+}
+
+.filter_price {
+    margin-bottom: 24px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.filter_category .name {
+    font-size: 20px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 24px;
+}
+
+.filter_category ul {
+    max-height: 253px;
+    display: flex
+;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    padding: 5px 0;
+}
+
+.filter_category ul a {
+    padding: 10px 16px;
+    border: 1px solid #C9C9C999;
+    display: block;
+    width: fit-content;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.filter_category ul a span {
+    color: #C9C9C9;
+}
+
+.filter_category ul a.active {
+    background: #C9C9C999;
+}
+
+.filter_search {
+    padding-top: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+}
+
+
+.filter_search input[type="text"] {
+    width: 100%;
+    border: 1px solid #C9C9C999;
+    padding: 17px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.filter_search form {
+    position: relative;
+}
+
+.filter_search form button {
+    background: none;
+    border: 0;
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.products_container .filter .btn_green {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.products_container {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 26px;
+}
+
+.sort_block {
+    display: flex
+;
+    gap: 61px;
+}
+
+.sort_block .sort .sort_dropdown {
+    display: none;
+    position: absolute;
+    top: 55px;
+    border: 1px solid #E2E2E2;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.sort_block .sort .sort_dropdown li a,
+.page_count_element .sort_dropdown a {
+    padding: 10px 30px;
+    display: block;
+    width: 100%;
+    background: #FFF;
+}
+
+.sort_block .sort>a {
+    padding: 16px 24px;
+    border: 1px solid #E2E2E2;
+    border-radius: 7px;
+    display: flex
+;
+    align-items: center;
+    gap: 37px;
+}
+
+.page_count_element {
+    display: flex
+;
+    gap: 34px;
+    align-items: center;
+    position: relative;
+}
+
+.page_count_element .sort_dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    border: 1px solid #E2E2E2;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    right: 0;
+    width: 83px;
+}
+
+.sort_block .sort .sort_dropdown li a:hover, .page_count_element .sort_dropdown a:hover {
+    background: #D9D9D9;
+}
+
+.page_count_element>a {
+    border: 1px solid #E2E2E2;
+    border-radius: 7px;
+    padding: 10px 16px;
+    display: flex
+;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.page_count_element .name {
+    font-family: 'Neris SemiBold';
+}
+
+.sort_block .sort {
+    position: relative;
+}
+
+.products_container .right_block .top_block {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.display_view_mode .active {
+    background: #024702;
+
+}
+
+.display_view_mode a {
+    width: 36px;
+    height: 36px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.display_view_mode {
+    display: flex
+;
+    gap: 8px;
+    align-items: center;
+}
+
+.display_view_mode a:not(.active) {
+    background: #F5F5F5;
+}
+
+.products_list .bottom_btns {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.products_list .bottom_btns .pagination {
+    display: flex
+;
+    align-items: center;
+    gap: 24px;
+}
+
+.products_list .bottom_btns .pagination ul {
+    display: flex
+;
+    gap: 16px;
+}
+
+.products_list .bottom_btns .pagination ul a {
+    border: 1px solid #C9C9C999;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.products_list .bottom_btns .pagination ul .dots {
+    display: flex
+;
+    align-items: flex-end;
+}
+
+.products_list .bottom_btns .pagination ul a.active {
+    background: #024702;
+    color: #FFF;
+}
+
+.products_list .show_more .btn_default {
+    padding: 14px 19px;
 }
