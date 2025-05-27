@@ -31,6 +31,11 @@ $(document).on('click', '.add_in_basket', function () {
     $(this).addClass('no_active')
 })
 
+$(document).on('click', '.accordion li', function () {
+    $(this).toggleClass('active');
+    $(this).children('.content').fadeToggle(100);
+})
+
 var mainSlide = new Swiper(".main_slide", {
     navigation: {
         nextEl: ".main_slide .btn_next",
