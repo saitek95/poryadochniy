@@ -45,6 +45,16 @@ var mainSlide = new Swiper(".main_slide", {
     spaceBetween: 30,
 });
 
+$(document).on('click', '.select p', function () {
+    $(this).siblings('.dropdown_select').fadeToggle(100);
+})
+
+$(document).on('click', '.select .dropdown_select .data-selected', function () {
+    var selected = $(this).text();
+    $(this).closest('.select').children('p').text(selected);
+    $(this).closest('.dropdown_select').fadeToggle(100);
+})
+
 window.addEventListener("DOMContentLoaded", function() {
     [].forEach.call( document.querySelectorAll('.phone'), function(input) {
         var keyCode;

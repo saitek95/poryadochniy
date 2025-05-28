@@ -39,6 +39,11 @@
     outline: none;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
     background: #C9C9C999;
@@ -1562,4 +1567,195 @@ footer .info_block .right_block a {
     font-size: 20px;
     color: #024702;
     text-decoration: underline;
+}
+
+.partners .info_block {
+    position: relative;
+    padding: 32px 57px 77px;
+    border: 1px solid #E2E2E2;
+    border-radius: 20px;
+    display: grid
+;
+    grid-template-columns: auto auto;
+    gap: 51px;
+}
+
+.partners .info_block:before {
+    content: '';
+    background-image: url("../img/нижний%20элемент%201.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 350px;
+    height: 213px;
+    z-index: -1;
+    opacity: 0.2;
+    bottom: 0;
+    left: 5%;
+}
+
+.partners .info_block .title {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 16px;
+}
+
+.partners .info_block .text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.partners .info_block .item:first-child {
+    max-width: 452px;
+}
+
+.partners .form_block {
+    position: relative;
+    padding: 64px 140px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+.partners .form_block:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #024702;
+    z-index: -2;
+}
+
+.partners .form_block:before {
+    content: '';
+    background-image: url("../img/нижний%20элемент%201.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    bottom: 0;
+    right: 0;
+    background-position: right;
+}
+
+.partners .form_block .title {
+    font-size: 36px;
+    font-family: 'Neris SemiBold';
+    color: #FFF;
+    margin-bottom: 24px;
+}
+
+.partners .form_block .text {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.partners .form_block form {
+    max-width: 1064px;
+    display: flex
+;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.partners .form_block form input[type="text"] {
+    padding: 16px 26px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.input_soc {
+    width: 416px;
+}
+
+.select .dropdown_select {
+    display: none;
+}
+
+.select {
+    position: relative;
+}
+
+.select p {
+    padding: 16px 26px;
+    background: #FFF;
+    border-radius: 6px;
+    color: #595959;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select .dropdown_select {
+    display: none;
+    position: absolute;
+    border: 1px solid #E2E2E2;
+    width: 100%;
+    top: 65px;
+    background: #FFF;
+    border-radius: 7px;
+}
+
+.select .dropdown_select li {
+    padding: 15px 29px;
+    font-weight: 300;
+    font-size: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.select .dropdown_select li:hover {
+    background: #C9C9C999;
+}
+
+.partners .form_block input[type="submit"] {
+    background: #FFF;
+    border: 0;
+    padding: 14px 52px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #024702;
+    font-family: 'Neris SemiBold';
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #FFF;
+    line-height: 100%;
+}
+
+.partners .form_block input[type="submit"]:hover {
+    background: #024702;
+    color: #FFF;
+}
+
+.partners .form_block .submit span {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 8px;
+    max-width: 243px;
+    display: block;
+    color: #FFF;
+}
+
+.partners .form_block .submit span a {
+    font-weight: 600;
+    color: #FFF;
+}
+
+.partners .form_block form .submit {
+    display: flex
+;
+    align-items: center;
 }
