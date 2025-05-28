@@ -60,6 +60,7 @@ const detailNewsSlider = new Swiper('.detail_news_slider_img', {
     watchSlidesProgress: true,
     slideVisibleClass: 'visible',
     centeredSlides: true,
+    width: 392,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -70,7 +71,7 @@ const detailNewsSlider = new Swiper('.detail_news_slider_img', {
             spaceBetween: 20,
         },
         1280: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 24,
         }
     }

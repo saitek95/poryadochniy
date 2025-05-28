@@ -1852,17 +1852,9 @@ footer .info_block .right_block a {
     margin-bottom: 24px;
 }
 
-.detail_news_slider_img {
-    overflow: hidden;
-}
-
-.detail_news_slider_img .swiper-slide img {
-    width: 392px;
+.detail_news_slider_img .swiper-slide {
     transition: 0.2s;
-    max-width: 392px;
 }
 
-.detail_news_slider_img .swiper-slide-active img {
-    width: 699px;
-    max-width: 699px;
+.detail_news_slider_img .swiper-slide-active {
 }
