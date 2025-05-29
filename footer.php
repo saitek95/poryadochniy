@@ -356,6 +356,19 @@
             </div>
         </div>
     </div>
+    <div class="empty_basket" style="display: none">
+        <div class="top_block">
+            <p class="title">Корзина</p>
+            <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
+        </div>
+        <div class="info_block">
+            <img src="assets/svg/cart_big.svg" alt="" class="svg">
+            <p class="title">В корзине пока пусто</p>
+            <p class="text">Добавить товары в корзину можно через каталог или страницу товара</p>
+            <a href="" class="btn_green">Перейти в каталог</a>
+        </div>
+
+    </div>
 </div>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

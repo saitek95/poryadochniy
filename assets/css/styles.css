@@ -1972,7 +1972,8 @@ footer .info_block .right_block a {
     padding-bottom: 75px;
 }
 
-.popup_cart .top_block {
+.popup_cart .top_block,
+.empty_basket .top_block {
     padding: 24px 18px 18px 24px;
     display: flex
 ;
@@ -1981,7 +1982,8 @@ footer .info_block .right_block a {
     justify-content: space-between;
 }
 
-.popup_cart .top_block .title {
+.popup_cart .top_block .title,
+.empty_basket .top_block .title {
     font-size: 26px;
     font-family: 'Neris SemiBold';
 }
@@ -2118,4 +2120,35 @@ footer .info_block .right_block a {
 
 .no-overflow {
     overflow: hidden;
+}
+
+.empty_basket {
+    height: 100%;
+}
+
+.empty_basket .info_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 76px;
+}
+
+.empty_basket .info_block  svg {
+    margin-bottom: 22px;
+}
+
+.empty_basket .info_block  .title {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 16px;
+}
+
+.empty_basket .info_block  .text {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 32px;
 }
