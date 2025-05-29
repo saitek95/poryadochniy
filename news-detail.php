@@ -21,7 +21,9 @@
             домашний спа-день или хотя бы спа-вечер. Расслабьтесь в теплой ванне, используя соли и аромамасла, с помощью
             скрабов и масел поухаживайте за кожей, сделайте самомассаж. Никуда не спешите, включите приятную расслабляющую
             музыку и не забудьте про свечи — они настроят на нужную релакс-волну</p>
-        <img src="assets/img/news-detail.png" alt="">
+        <a href="assets/img/news-detail.png" data-fancybox>
+            <img src="assets/img/news-detail.png" alt="">
+        </a>
         <h4>Составить список планов и целей</h4>
         <p>Когда подведены итоги года, пора составить новый список планов и задач на ближайшие 12 месяцев. Он поможет
             сфокусироваться на главном, чтобы было проще организовать свою жизнь в ближайшее время. Подумайте, что вы
@@ -40,19 +42,89 @@
     <div class="detail_news_slider_img">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" alt="">
+                <a href="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" data-fancybox>
+                    <img src="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
+                <a href="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" data-fancybox>
+                    <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
+                <a href="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" data-fancybox>
+                    <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
+                <a href="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" data-fancybox>
+                    <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" data-fancybox>
+                    <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
 </div>
-
+<h2>Другие новости</h2>
+<div class="news-list">
+    <a href="" class="item">
+        <div class="left_block">
+            <div class="date">
+                30.10.2024
+            </div>
+            <p class="title">
+                Не забывайте следить за нашим блогом
+            </p>
+        </div>
+        <div class="text">
+            Специальные акции и распродажи делают эти великолепные изделия доступнее, позволяя каждому наполнить свое
+            пространство красотой. Кроме того, мы представляем новинки в области кухонной посуды, которые не только
+            облегчат процессы приготовления, но и станут истинным украшением любого стола
+        </div>
+        <div class="img">
+            <img src="assets/img/news.png" alt="">
+        </div>
+    </a>
+    <a href="" class="item">
+        <div class="left_block">
+            <div class="date">
+                30.10.2024
+            </div>
+            <p class="title">
+                Не забывайте следить за нашим блогом
+            </p>
+        </div>
+        <div class="text">
+            Специальные акции и распродажи делают эти великолепные изделия доступнее, позволяя каждому наполнить свое
+            пространство красотой. Кроме того, мы представляем новинки в области кухонной посуды, которые не только
+            облегчат процессы приготовления, но и станут истинным украшением любого стола
+        </div>
+        <div class="img">
+            <img src="assets/img/news.png" alt="">
+        </div>
+    </a>
+    <a href="" class="item">
+        <div class="left_block">
+            <div class="date">
+                30.10.2024
+            </div>
+            <p class="title">
+                Не забывайте следить за нашим блогом
+            </p>
+        </div>
+        <div class="text">
+            Специальные акции и распродажи делают эти великолепные изделия доступнее, позволяя каждому наполнить свое
+            пространство красотой. Кроме того, мы представляем новинки в области кухонной посуды, которые не только
+            облегчат процессы приготовления, но и станут истинным украшением любого стола
+        </div>
+        <div class="img">
+            <img src="assets/img/news.png" alt="">
+        </div>
+    </a>
+    <a href="" class="btn_default">Показать все</a>
+</div>
 <?php include 'footer.php'; ?>

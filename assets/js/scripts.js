@@ -36,6 +36,24 @@ $(document).on('click', '.accordion li', function () {
     $(this).children('.content').fadeToggle(100);
 })
 
+$(document).on('click', '.popup_cart .close_modal', function () {
+    $('.overlay').fadeOut(100);
+    $('.modal_cart').fadeOut(100);
+    $('body').removeClass('no-overflow');
+})
+
+$(document).on('click', '.overlay', function () {
+    $('.overlay').fadeOut(100);
+    $('.modal_cart').fadeOut(100);
+    $('body').removeClass('no-overflow');
+})
+
+$(document).on('click', '#modal_cart', function () {
+    $('.overlay').fadeIn(100);
+    $('.modal_cart').fadeIn(100);
+    $('body').addClass('no-overflow');
+})
+
 var mainSlide = new Swiper(".main_slide", {
     navigation: {
         nextEl: ".main_slide .btn_next",
@@ -59,8 +77,14 @@ const detailNewsSlider = new Swiper('.detail_news_slider_img', {
     loop: true,
     watchSlidesProgress: true,
     slideVisibleClass: 'visible',
-    centeredSlides: true,
-    width: 392,
+    pagination: {
+        el: '.pagination',
+        clickable: true,
+        currentClass: 'active',
+        bulletClass: 'bullet',
+        bulletActiveClass: 'bullet-active',
+    },
+
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -71,10 +95,14 @@ const detailNewsSlider = new Swiper('.detail_news_slider_img', {
             spaceBetween: 20,
         },
         1280: {
-            slidesPerView: 1,
-            spaceBetween: 24,
+            slidesPerView: 3,
+            spaceBetween: 16,
         }
     }
+});
+
+Fancybox.bind("[data-fancybox]", {
+    groupAll: true,
 });
 
 window.addEventListener("DOMContentLoaded", function() {
