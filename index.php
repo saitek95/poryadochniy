@@ -27,7 +27,7 @@
         <img src="assets/svg/main_slide_next.svg" alt="" class="svg">
     </div>
 </div>
-<div class="main_tabs">
+<div class="max_width_theme main_tabs">
     <p class="title">
         Мы тщательно отбираем продукцию, ориентируясь на качество,
         стилистику и необходимость в жизни современного человека
@@ -525,7 +525,7 @@
         </div>
     </div>
 </div>
-<div class="main_popular_category">
+<div class="max_width_theme main_popular_category">
     <p class="title">
         Популярные категории
     </p>
@@ -642,7 +642,7 @@
         <a href="" class="btn_default">Смотреть все категории</a>
     </div>
 </div>
-<div class="main_stocks">
+<div class="max_width_theme main_stocks">
     <p class="title">Акции</p>
     <div class="grid_2">
         <a href="" class="item" style="background-image: url('assets/img/stocks_background.png')">

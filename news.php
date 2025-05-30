@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
-<div class="breadcrumb">
+<div class="max_width_theme breadcrumb">
     <ul>
         <li><a href="">Главная</a></li>
         <img src="assets/svg/arrow_breadcrumb.svg" alt="" class="svg">
         <li>Новости</li>
     </ul>
 </div>
-<div class="news-list">
+<div class="max_width_theme news-list">
     <a href="" class="item">
         <div class="left_block">
             <div class="date">

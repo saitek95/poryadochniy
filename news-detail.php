@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
-<div class="breadcrumb">
+<div class="max_width_theme breadcrumb">
     <ul>
         <li><a href="">Главная</a></li>
         <img src="assets/svg/arrow_breadcrumb.svg" alt="" class="svg">
         <li>Новости</li>
     </ul>
 </div>
-<div class="news_detail">
+<div class="max_width_theme news_detail">
     <div class="top_block">
         <h1 class="page_title">
             Что делать на зимних каникулах : 4 идеи

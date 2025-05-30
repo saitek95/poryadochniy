@@ -1,12 +1,12 @@
 <?php include 'header.php'; ?>
-<div class="breadcrumb">
+<div class="max_width_theme breadcrumb">
     <ul>
         <li><a href="">Главная</a></li>
         <img src="assets/svg/arrow_breadcrumb.svg" alt="" class="svg">
         <li>Частые вопросы</li>
     </ul>
 </div>
-<div class="accordion">
+<div class="max_width_theme accordion">
     <ul>
         <li>
             <div class="name">
@@ -61,6 +61,5 @@
             </div>
         </li>
     </ul>
-
 </div>
 <?php include 'footer.php'; ?>

@@ -1,12 +1,12 @@
 <?php include "header.php"; ?>
-<div class="breadcrumb">
+<div class="max_width_theme breadcrumb">
     <ul>
         <li><a href="">Главная</a></li>
         <img src="assets/svg/arrow_breadcrumb.svg" alt="" class="svg">
         <li>Каталог</li>
     </ul>
 </div>
-<div class="catalog_list">
+<div class="max_width_theme catalog_list">
     <div class="big_block">
         <a href="" style="background: url('assets/img/news_175590_image_900x_.png'), #7BD70033">
             <p class="name">Подарочные сертификаты</p>

@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<div class="breadcrumb">
+<div class="max_width_theme breadcrumb">
     <ul>
         <li><a href="">Главная</a></li>
         <img src="assets/svg/arrow_breadcrumb.svg" alt="" class="svg">
@@ -8,7 +8,7 @@
         <li>Кухня</li>
     </ul>
 </div>
-<div class="products_container">
+<div class="max_width_theme products_container">
     <div class="left_block">
         <h1 class="page_title">
             Кухня
