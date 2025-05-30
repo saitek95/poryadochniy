@@ -64,6 +64,11 @@ $(document).on('click', '.select .dropdown_select .data-selected', function () {
     $(this).closest('.dropdown_select').fadeToggle(100);
 })
 
+$(document).on('click', '[href="#show_more_prop"]', function () {
+    $('li.card_hidden_props').fadeIn().css('display', 'flex');
+    $(this).fadeOut();
+})
+
 $('.main_slide .slides').slick({
     centerMode: true,
     centerPadding: '20px',
@@ -99,6 +104,24 @@ const detailNewsSlider = new Swiper('.detail_news_slider_img', {
             spaceBetween: 16,
         }
     }
+});
+
+var productImgSliderThumb = new Swiper(".product_images_slider_thumb", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    watchSlidesProgress: true,
+});
+
+var productImgSliderBig = new Swiper(".product_images_slider_big", {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    thumbs: {
+        swiper: productImgSliderThumb,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });
 
 Fancybox.bind("[data-fancybox]", {
