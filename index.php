@@ -1,30 +1,32 @@
 <?php include "header.php"; ?>
 <div class="main_slide">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
-            <p class="title">
-                Выгодная цена на Столовые приборы и наборы
-            </p>
-            <a href="" class="btn_green">Перейти</a>
+    <div class="max_width_theme">
+        <div class="slides">
+            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+                <p class="title">
+                    Выгодная цена на Столовые приборы и наборы
+                </p>
+                <a href="" class="btn_green">Перейти</a>
+            </div>
+            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+                <p class="title">
+                    Выгодная цена на Столовые приборы и наборы
+                </p>
+                <a href="" class="btn_green">Перейти</a>
+            </div>
+            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+                <p class="title">
+                    Выгодная цена на Столовые приборы и наборы
+                </p>
+                <a href="" class="btn_green">Перейти</a>
+            </div>
         </div>
-        <div class="swiper-slide left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
-            <p class="title">
-                Выгодная цена на Столовые приборы и наборы
-            </p>
-            <a href="" class="btn_green">Перейти</a>
+        <div class="btn_prev">
+            <img src="assets/svg/main_slide_prev.svg" alt="" class="svg">
         </div>
-        <div class="swiper-slide left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
-            <p class="title">
-                Выгодная цена на Столовые приборы и наборы
-            </p>
-            <a href="" class="btn_green">Перейти</a>
+        <div class="btn_next">
+            <img src="assets/svg/main_slide_next.svg" alt="" class="svg">
         </div>
-    </div>
-    <div class="btn_prev">
-        <img src="assets/svg/main_slide_prev.svg" alt="" class="svg">
-    </div>
-    <div class="btn_next">
-        <img src="assets/svg/main_slide_next.svg" alt="" class="svg">
     </div>
 </div>
 <div class="max_width_theme main_tabs">

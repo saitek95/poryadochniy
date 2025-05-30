@@ -29,6 +29,10 @@
     src: local('../fonts/Neris Black'), url('../fonts/Neris-Black.woff') format('woff');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Inter';
     color: #212121;
@@ -37,6 +41,10 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h2 {
@@ -66,7 +74,7 @@ ul, li {
 header {
     max-width: 1824px;
     margin: auto;
-    padding: 24px 12px;
+    padding: 24px 12px 35px;
 }
 
 header .top_block {
@@ -379,11 +387,23 @@ header .bottom_block .left_block {
 .main_slide {
     max-height: 355px;
     position: relative;
+    overflow: hidden;
 }
 
-.main_slide .swiper-slide {
-    background-repeat: no-repeat !important;
+.main_slide .slick-list {
+    overflow: visible;
+}
+
+.main_slide .slick-slide {
     border-radius: 20px;
+    overflow: hidden;
+    width: 1620px;
+    margin: 0 15px;
+    transition: 0.2s;
+}
+
+.main_slide .slick-slide:not(.slick-center) {
+    opacity: 0.6;
 }
 
 .main_slide .left_text {
@@ -401,7 +421,7 @@ header .bottom_block .left_block {
     line-height: 100%;
 }
 
-.main_slide .swiper-slide {
+.main_slide .slick-slide>div>div {
     background-repeat: no-repeat !important;
     background-position: right, 72% !important;
 }
@@ -518,6 +538,16 @@ header .bottom_block .left_block {
     position: absolute;
     top: 27px;
     right: 24px;
+    cursor: pointer;
+}
+
+.product .add_favorites path {
+    transition: 0.1s;
+}
+
+.product .add_favorites path:hover {
+    fill: #DA0916;
+    stroke: #DA0916;
 }
 
 .product img {
@@ -798,6 +828,7 @@ header .bottom_block .left_block {
     max-width: 1620px;
     padding: 0px 12px;
     margin: auto;
+    position: relative;
 }
 
 footer {
@@ -1220,6 +1251,7 @@ footer .info_block .right_block a {
     width: 100%;
     border-radius: 7px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .sort_block .sort .sort_dropdown li a,
@@ -1256,6 +1288,7 @@ footer .info_block .right_block a {
     overflow: hidden;
     right: 0;
     width: 83px;
+    z-index: 2;
 }
 
 .sort_block .sort .sort_dropdown li a:hover, .page_count_element .sort_dropdown a:hover {
@@ -1578,7 +1611,7 @@ footer .info_block .right_block a {
 
 .partners .form_block {
     position: relative;
-    padding: 64px 140px;
+    padding: 64px 140px 100px;
     border-radius: 20px;
     overflow: hidden;
     margin: 100px 0;
@@ -1814,6 +1847,10 @@ footer .info_block .right_block a {
     margin-bottom: 24px;
 }
 
+.detail_news_slider_img {
+    height: 407px;
+}
+
 .detail_news_slider_img .swiper-slide-next {
     transform: scaleX(1.6);
 }
@@ -1856,10 +1893,8 @@ footer .info_block .right_block a {
     display: flex;
     justify-content: flex-end;
 }
-
 .contacts .top_block {
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -1931,8 +1966,7 @@ footer .info_block .right_block a {
     width: 100%;
     padding: 19px 11px;
     border-bottom: 1px solid #C9C9C999;
-    display: flex
-;
+    display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
@@ -1975,8 +2009,7 @@ footer .info_block .right_block a {
 .popup_cart .top_block,
 .empty_basket .top_block {
     padding: 24px 18px 18px 24px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 30px;
     justify-content: space-between;
@@ -2016,8 +2049,7 @@ footer .info_block .right_block a {
 .popup_cart .products_block .item .img {
     padding: 10px;
     background: #F1F6F7;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -2028,8 +2060,7 @@ footer .info_block .right_block a {
     border: 1px solid #C9C9C999;
     border-radius: 6px;
     height: 27px;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     gap: 24px;
     align-items: center;
@@ -2048,8 +2079,7 @@ footer .info_block .right_block a {
 
 .popup_cart .products_block .item .price_block {
     gap: 8px;
-    display: flex
-;
+    display: flex;
     align-items: center;
 }
 
@@ -2085,8 +2115,7 @@ footer .info_block .right_block a {
 }
 
 .popup_cart .buy_block .item {
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 18px;

@@ -54,15 +54,6 @@ $(document).on('click', '#modal_cart', function () {
     $('body').addClass('no-overflow');
 })
 
-var mainSlide = new Swiper(".main_slide", {
-    navigation: {
-        nextEl: ".main_slide .btn_next",
-        prevEl: ".main_slide .btn_prev",
-    },
-    loop: true,
-    spaceBetween: 30,
-});
-
 $(document).on('click', '.select p', function () {
     $(this).siblings('.dropdown_select').fadeToggle(100);
 })
@@ -71,6 +62,15 @@ $(document).on('click', '.select .dropdown_select .data-selected', function () {
     var selected = $(this).text();
     $(this).closest('.select').children('p').text(selected);
     $(this).closest('.dropdown_select').fadeToggle(100);
+})
+
+$('.main_slide .slides').slick({
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 1,
+    variableWidth: true,
+    prevArrow: '.main_slide .btn_prev',
+    nextArrow: '.main_slide .btn_next'
 })
 
 const detailNewsSlider = new Swiper('.detail_news_slider_img', {

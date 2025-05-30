@@ -1,4 +1,3 @@
-</div>
 <footer>
     <div class="max_width_theme">
         <div class="top_block">
@@ -8,7 +7,7 @@
             <div class="col">
                 <p class="title">Контакты</p>
             </div>
-            <a href="" class="btn_up">
+            <a href="#up" class="btn_up">
                 <p class="name">Наверх</p>
                 <img src="assets/svg/btn_up.svg" alt="" class="svg">
             </a>
@@ -373,6 +372,7 @@
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
