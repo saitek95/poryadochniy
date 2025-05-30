@@ -1344,6 +1344,10 @@ footer .info_block .right_block a {
     background: #F5F5F5;
 }
 
+.display_view_mode a:not(.active) path {
+    fill: #C9C9C9;
+}
+
 .products_list .bottom_btns {
     display: flex;
     align-items: center;

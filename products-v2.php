@@ -108,10 +108,10 @@
                 </div>
             </div>
             <div class="display_view_mode">
-                <a href="products.php" class="active">
+                <a href="products.php">
                     <img src="assets/svg/view_mode_1.svg" alt="" class="svg">
                 </a>
-                <a href="products-v2.php">
+                <a href="products-v2.php" class="active">
                     <img src="assets/svg/view_mode_2.svg" alt="" class="svg">
                 </a>
             </div>
@@ -445,5 +445,3 @@
     </div>
 </div>
 <?php include 'footer.php'; ?>
-
-
