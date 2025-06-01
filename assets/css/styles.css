@@ -121,6 +121,7 @@ header .location a {
 .btn_default:hover{
     background: #024702;
     color: #FFF;
+    text-decoration: none;
 }
 
 .btn_green {
@@ -192,6 +193,7 @@ header .bottom_block .left_block {
 
 .btn_catalog:hover {
     background: #FFF;
+    text-decoration: none;
 }
 
 .btn_catalog:hover path {
@@ -833,6 +835,7 @@ header .bottom_block .left_block {
 
 footer {
     position: relative;
+    padding-top: 64px;
 }
 
 footer>svg {
@@ -2411,10 +2414,50 @@ li.card_hidden_props {
     border: 1px solid #C9C9C999;
     border-radius: 100%;
     cursor: pointer;
-    margin-bottom: 32px;
 }
 
-.card_buy_product .card_add_favorites path:hover {
+.card_buy_product .card_add_favorites:hover path {
     fill: #DA0916;
     stroke: #DA0916;
+}
+
+.card_info_delivery .item {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card_info_delivery .item:not(:last-child) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #C9C9C999;
+}
+
+.card_info_delivery .name {
+    width: 103px;
+}
+
+.card_info_date_delivery {
+    width: 140px;
+}
+
+.card_info_delivery {
+    margin-top: 50px;
+}
+
+.other_products_in_card {
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.other_products_in_card:last-child {
+    padding-top: 0;
+}
+
+.other_products_in_card h4 {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 32px;
 }

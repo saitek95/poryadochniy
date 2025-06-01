@@ -124,6 +124,25 @@ var productImgSliderBig = new Swiper(".product_images_slider_big", {
     },
 });
 
+const productSlider = new Swiper('.product_slider', {
+    spaceBetween: 35,
+    slidesPerView: 5,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1280: {
+            slidesPerView: 5,
+            spaceBetween: 16,
+        }
+    }
+});
+
 Fancybox.bind("[data-fancybox]", {
     groupAll: true,
 });
