@@ -369,6 +369,58 @@
 
     </div>
 </div>
+<div class="modal_auth">
+    <div class="popup_auth">
+        <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
+        <h4>Войти</h4>
+        <div class="auth_tabs">
+            <p class="auth_tabs_phone active" data-auth-tabs="auth_content_phone">Телефон</p>
+            <p class="auth_tabs_email" data-auth-tabs="auth_content_email">Email</p>
+        </div>
+        <div class="auth_content">
+            <div class="auth_content_phone active">
+                <form action="">
+                    <div class="auth_phone_step_1">
+                        <input type="text" class="phone" placeholder="+7 (___) ___-__-__">
+                        <input type="submit" class="btn_default" value="Войти в личный кабинет">
+                    </div>
+                    <div class="auth_phone_step_2">
+                        <input type="text" class="code_auth" placeholder="Ввести код">
+                        <input type="submit" class="btn_default" value="Войти">
+                        <p class="repeat_code_submit">
+                            Отправить код повторно через 58 сек.
+                        </p>
+                        <p class="no_whatsapp">
+                            У меня нет whatsapp
+                        </p>
+                    </div>
+                    <div class="auth_phone_step_3">
+                        <input type="text" class="code_auth" placeholder="Ввести код">
+                        <input type="submit" class="btn_default" value="Войти">
+                        <p class="repeat_code_submit">
+                            Отправить код повторно через 58 сек.
+                        </p>
+                        <p class="no_whatsapp">
+                            У меня нет whatsapp
+                        </p>
+                    </div>
+                </form>
+                <div class="bottom_info_auth">
+                    Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                </div>
+            </div>
+            <div class="auth_content_email">
+                <form action="">
+                    <input type="text" class="email" placeholder="Email">
+                    <input type="submit" class="btn_default" value="Войти в личный кабинет">
+                </form>
+                <div class="bottom_info_auth">
+                    Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>

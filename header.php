@@ -518,7 +518,7 @@
                 <img src="assets/svg/head_cart.svg" alt="" class="svg">
                 Корзина
             </a>
-            <a href="">
+            <a id="modal_auth">
                 <img src="assets/svg/head_lk.svg" alt="" class="svg">
                 Войти
             </a>

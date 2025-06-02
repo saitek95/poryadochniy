@@ -116,6 +116,7 @@ header .location a {
     overflow: hidden;
     display: block;
     text-align: center;
+    background: #FFF;
 }
 
 .btn_default:hover{
@@ -141,6 +142,7 @@ header .location a {
 .btn_green:hover {
     color: #024702;
     background: #FFF;
+    text-decoration: none;
 
 }
 
@@ -1751,10 +1753,6 @@ footer .info_block .right_block a {
     width: 416px;
 }
 
-.select .dropdown_select {
-    display: none;
-}
-
 .select {
     position: relative;
 }
@@ -1780,6 +1778,7 @@ footer .info_block .right_block a {
     top: 65px;
     background: #FFF;
     border-radius: 7px;
+    z-index: 1;
 }
 
 .select .dropdown_select li {
@@ -2471,14 +2470,14 @@ li.card_hidden_props {
     display: flex
 ;
     gap: 80px;
-    margin-bottom: 42px;
+    margin-bottom: 30px;
 }
 
 input[type="checkbox"] {
     display: none;
 }
 
-.delete_cart label {
+input[type="checkbox"]+label {
     position: relative;
     padding-left: 50px;
     display: flex
@@ -2486,7 +2485,7 @@ input[type="checkbox"] {
     align-items: center;
 }
 
-.delete_cart label:after {
+input[type="checkbox"]+label:after {
     content: '';
     border: 1px solid #C9C9C999;
     left: 0;
@@ -2494,6 +2493,17 @@ input[type="checkbox"] {
     width: 26px;
     height: 26px;
     border-radius: 6px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.delete_cart a {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.delete_cart a span {
+    color: #C9C9C9;
 }
 
 input[type="checkbox"]:checked+:before {
@@ -2501,13 +2511,14 @@ input[type="checkbox"]:checked+:before {
     background-image: url("../svg/checked.svg");
     position: absolute;
     left: 7px;
-    top: 5px;
+    top: 50%;
     z-index: 2;
     width: 15px;
     height: 12px;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    transform: translate(-0, -50%);
 }
 
 .basket-item-image-link {
@@ -2596,7 +2607,7 @@ span.basket-item-amount-btn-plus:before {
 }
 
 .basket-item-price-current .prices_block {
-    padding: 16px;
+    padding: 16px 0;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -2620,4 +2631,362 @@ span.basket-item-amount-btn-plus:before {
     font-weight: 600;
     color: #999999;
     text-decoration: line-through;
+}
+
+.basket-items-list-item-removes {
+    display: flex
+;
+    align-items: center;
+    gap: 24px;
+    justify-content: flex-end;
+}
+
+.basket-item-actions-remove svg {
+    width: 21px;
+    height: 21px;
+}
+
+.wishlist.icon-custom path {
+    stroke: #212121;
+    transition: 0.2s;
+}
+
+.wishlist.icon-custom:hover path {
+    fill: #DA0916;
+    stroke: #DA0916;
+}
+
+.wishlist.icon-custom.active path {
+    fill: #DA0916;
+    stroke: #DA0916;
+}
+
+.basket-items-list-item-container td {
+    padding: 12px 0;
+}
+
+.order_total {
+    height: fit-content;
+    padding: 48px;
+    border: 1px solid #C9C9C999;
+    border-radius: 20px;
+    width: 449px;
+    position: sticky;
+    top: 10px
+}
+
+.order_total span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cart_info_total .item {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart_info_total {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #C9C9C999;
+}
+
+.cart_info_total .item span {
+    display: flex
+;
+    align-items: center;
+}
+
+.cart_info_total .item span sub {
+    color: #C9C9C999;
+}
+
+.cart_info_sum {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #C9C9C999;
+}
+
+.cart_info_sum span:first-child {
+    font-size: 26px;
+    font-family: "Neris SemiBold";
+}
+
+.cart_info_sum span:last-child {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.basket-coupon-section {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #C9C9C999;
+
+}
+
+.basket-coupon-section .form_group {
+    position: relative;
+    border: 1px solid #024702;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.basket-coupon-section input[type="text"] {
+    width: 100%;
+    padding: 18px 150px 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #024702;
+    border: 0;
+}
+
+.basket-coupon-section input[type="submit"] {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 16px 11px;
+    background: #024702;
+    border: 0;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.order_total .btn_green {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+}
+
+.info_buyer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    max-width: 1258px;
+}
+
+.info_buyer_delivery {
+    max-width: 1258px;
+}
+
+.info_buyer h4,
+.info_buyer_delivery h4 {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 32px;
+}
+
+.info_buyer input[type="text"] {
+    width: 257px;
+    padding: 16px 26px;
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+}
+
+.info_buyer  input.name_buyer{
+    max-width: 506px;
+    width: 100%;
+}
+
+.info_buyer .form_group {
+    display: flex
+;
+    align-items: center;
+    gap: 16px;
+}
+
+.check_email label {
+    padding-left: 32px !important;
+}
+
+.check_email label:after,
+.bx-soa-delivery label:after{
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.check_email input[type="checkbox"]:checked+:before,
+.bx-soa-delivery input[type="checkbox"]:checked+:before {
+    width: 14px;
+    height: 11px;
+}
+
+.info_buyer_delivery .form_group {
+    display: grid
+;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 40px;
+    gap: 50px
+}
+
+.info_buyer_delivery .title {
+    width: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info_buyer_delivery .form_group .select {
+    width: 100%;
+    max-width: 295px;
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+}
+
+.bx-soa-delivery {
+    display: flex
+;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 476px;
+}
+
+.bx-soa-delivery .item label {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bx-soa-delivery .item label span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.bx-soa-delivery .item label span:first-child {
+    width: 213px;
+}
+
+.address_delivery_items>input[type="text"] {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.address_delivery_items input[type="text"] {
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+    padding: 16px 26px;
+    font-size: 16px;
+}
+
+.address_delivery_items .group_inputs {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 8px;
+}
+
+.pay_system_items {
+    display: flex
+;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.address_delivery_items {
+    max-width: 851px;
+}
+
+.address_delivery_items .group_inputs input {
+    max-width: 164px;
+}
+
+.pay_system_items label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pay_system_items label svg {
+    margin-right: 8px;
+}
+
+.modal_auth {
+    position: fixed;
+    max-width: 553px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 4.5px 2px #00000026;
+    background: #FFF;
+    padding: 30px 66px;
+    border-radius: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.popup_auth .close_modal {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.popup_auth h4 {
+    font-family: 'Neris SemiBold';
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.auth_tabs {
+    display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    background: #C9C9C9;
+    padding: 4px;
+    border-radius: 7px;
+    margin-bottom: 24px;
+}
+
+.auth_tabs_phone,
+.auth_tabs_email {
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+.auth_tabs_phone.active,
+.auth_tabs_email.active {
+    color: #595959;
+    background: #FFF;
+}
+
+.auth_content_email,
+.auth_content_phone{
+    display: none;
+}
+
+.auth_content_email.active,
+.auth_content_phone.active {
+    display: block;
+}
+
+.auth_content .phone,
+.auth_content .email {
+    width: 100%;
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+    padding: 16px 22px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.auth_content .btn_default {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.auth_content .bottom_info_auth {
+    text-align: center;
+    font-size: 18px;
+    color: #C9C9C9;
 }

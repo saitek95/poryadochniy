@@ -36,15 +36,17 @@ $(document).on('click', '.accordion li', function () {
     $(this).children('.content').fadeToggle(100);
 })
 
-$(document).on('click', '.popup_cart .close_modal', function () {
+$(document).on('click', '.close_modal', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
+    $('.modal_auth').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
 $(document).on('click', '.overlay', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
+    $('.modal_auth').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
@@ -67,6 +69,25 @@ $(document).on('click', '.select .dropdown_select .data-selected', function () {
 $(document).on('click', '[href="#show_more_prop"]', function () {
     $('li.card_hidden_props').fadeIn().css('display', 'flex');
     $(this).fadeOut();
+})
+
+$(document).on('click', '#modal_auth', function () {
+    $('.overlay').fadeIn(100);
+    $('.modal_auth').fadeIn(100);
+    $('body').addClass('no-overflow');
+})
+
+$(document).on('click', '.auth_tabs>p', function () {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    var dataAuthTabs = $(this).data('auth-tabs');
+    $('.auth_content>div').each(function () {
+        if($(this).attr('class') == dataAuthTabs) {
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active')
+        }
+    })
+
 })
 
 $('.main_slide .slides').slick({
