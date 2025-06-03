@@ -371,57 +371,81 @@
 </div>
 <div class="modal_auth">
     <div class="popup_auth">
-        <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
-        <h4>Войти</h4>
-        <div class="auth_tabs">
-            <p class="auth_tabs_phone active" data-auth-tabs="auth_content_phone">Телефон</p>
-            <p class="auth_tabs_email" data-auth-tabs="auth_content_email">Email</p>
+        <div class="prev_step" style="display: none">
+            <img src="assets/svg/prev_step.svg" alt="">
+            <span>Назад</span>
         </div>
+        <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
         <div class="auth_content">
             <div class="auth_content_phone active">
-                <form action="">
-                    <div class="auth_phone_step_1">
+                <form action="" data-steps-container>
+                    <div class="current_step" data-step>
+                        <h4>Войти</h4>
+                        <div class="auth_tabs">
+                            <p class="auth_tabs_phone active" data-auth-tabs="auth_content_phone">Телефон</p>
+                            <p class="auth_tabs_email" data-auth-tabs="auth_content_email">Email</p>
+                        </div>
                         <input type="text" class="phone" placeholder="+7 (___) ___-__-__">
-                        <input type="submit" class="btn_default" value="Войти в личный кабинет">
+                        <a class="btn_default next_step">
+                            Войти в личный кабинет
+                        </a>
+                        <div class="bottom_info_auth">
+                            Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                        </div>
                     </div>
-                    <div class="auth_phone_step_2">
+                    <div data-step style="display: none">
+                        <h5>Введите код</h5>
+                        <p class="info_auth_phone_text">Мы отправили вам 4-ех значный код на whatsapp. Введите код</p>
                         <input type="text" class="code_auth" placeholder="Ввести код">
                         <input type="submit" class="btn_default" value="Войти">
-                        <p class="repeat_code_submit">
+                        <a class="repeat_code_submit">
                             Отправить код повторно через 58 сек.
-                        </p>
-                        <p class="no_whatsapp">
+                        </a>
+                        <a class="no_whatsapp next_step">
                             У меня нет whatsapp
-                        </p>
+                        </a>
                     </div>
-                    <div class="auth_phone_step_3">
+                    <div data-step style="display: none">
+                        <h5>Введите код</h5>
+                        <p class="info_auth_phone_text">К вам на номер поступит звонок.<br>
+                            Введите последние 4 цифры номера телефона</p>
                         <input type="text" class="code_auth" placeholder="Ввести код">
                         <input type="submit" class="btn_default" value="Войти">
-                        <p class="repeat_code_submit">
+                        <a class="repeat_code_submit">
                             Отправить код повторно через 58 сек.
-                        </p>
-                        <p class="no_whatsapp">
-                            У меня нет whatsapp
-                        </p>
+                        </a>
                     </div>
                 </form>
-                <div class="bottom_info_auth">
-                    Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
-                </div>
             </div>
             <div class="auth_content_email">
-                <form action="">
-                    <input type="text" class="email" placeholder="Email">
-                    <input type="submit" class="btn_default" value="Войти в личный кабинет">
+                <form action="" data-steps-container>
+                    <div class="current_step" data-step>
+                        <h4>Войти</h4>
+                        <div class="auth_tabs">
+                            <p class="auth_tabs_phone" data-auth-tabs="auth_content_phone">Телефон</p>
+                            <p class="auth_tabs_email active" data-auth-tabs="auth_content_email">Email</p>
+                        </div>
+                        <input type="text" class="email" placeholder="Email">
+                        <a class="btn_default next_step">
+                            Войти в личный кабинет
+                        </a>
+                        <div class="bottom_info_auth">
+                            Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                        </div>
+                    </div>
+                    <div data-step style="display: none">
+                        <h5>Введите код</h5>
+                        <p class="info_auth_phone_text">Мы отправили вам 4-ех значный код на почту. Введите код</p>
+                        <input type="text" placeholder="Введите код">
+                        <input type="submit" class="btn_default" value="Войти в личный кабинет">
+                    </div>
                 </form>
-                <div class="bottom_info_auth">
-                    Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
-                </div>
             </div>
         </div>
     </div>
 </div>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

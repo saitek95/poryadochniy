@@ -2908,6 +2908,7 @@ span.basket-item-amount-btn-plus:before {
 .modal_auth {
     position: fixed;
     max-width: 553px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2960,6 +2961,10 @@ span.basket-item-amount-btn-plus:before {
     background: #FFF;
 }
 
+.auth_content_phone form {
+    position: relative;
+}
+
 .auth_content_email,
 .auth_content_phone{
     display: none;
@@ -2970,8 +2975,7 @@ span.basket-item-amount-btn-plus:before {
     display: block;
 }
 
-.auth_content .phone,
-.auth_content .email {
+.auth_content input[type="text"] {
     width: 100%;
     border: 1px solid #C9C9C999;
     border-radius: 6px;
@@ -2988,5 +2992,68 @@ span.basket-item-amount-btn-plus:before {
 .auth_content .bottom_info_auth {
     text-align: center;
     font-size: 18px;
+    color: #C9C9C9;
+}
+
+a.repeat_code_submit {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.no_whatsapp {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #9D4242;
+}
+
+.info_auth_phone_text {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+[data-step] {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.current_step {
+    display: block;
+    position: relative;
+}
+
+.auth_content h5 {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    text-align: center;
+    margin-top: 32px;
+}
+
+.popup_auth .prev_step {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.popup_auth .prev_step span {
     color: #C9C9C9;
 }

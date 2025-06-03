@@ -87,8 +87,49 @@ $(document).on('click', '.auth_tabs>p', function () {
             $(this).siblings().removeClass('active')
         }
     })
-
 })
+
+// Кнопка "Вперед"
+$(document).on('click', '.next_step', function () {
+    const $currentStep = $(this).closest('.current_step');
+    const $stepsContainer = $currentStep.closest('[data-steps-container]');
+    const $allSteps = $stepsContainer.find('[data-step]');
+    const currentIndex = $allSteps.index($currentStep);
+    const $nextStep = $allSteps.eq(currentIndex + 1);
+
+    if (!$nextStep.length) return;
+
+    $currentStep.hide('slide', { direction: 'left' }, 500, function() {
+        $(this).removeClass('current_step');
+        $nextStep.addClass('current_step').show('slide', { direction: 'right' }, 500);
+        $('.popup_auth .prev_step').fadeIn(100); // Показываем кнопку "Назад"
+    });
+});
+
+$(document).on('click', '.prev_step', function() {
+    const $stepsContainer = $('[data-steps-container]');
+    const $currentStep = $stepsContainer.find('.current_step');
+    const $allSteps = $stepsContainer.find('[data-step]');
+    const currentIndex = $allSteps.index($currentStep);
+    console.log('Текущий индекс:', currentIndex, 'Всего шагов:', $allSteps.length);
+    if (currentIndex <= 0) {
+        console.log("Это первый шаг, назад перейти нельзя");
+        return;
+    }
+    const $prevStep = $allSteps.eq(currentIndex - 1);
+    $('.prev_step, .next_step').prop('disabled', true);
+    $currentStep.hide('slide', { direction: 'right' }, 500, function() {
+        $(this).removeClass('current_step');
+        $prevStep.addClass('current_step').show('slide', { direction: 'left' }, 500, function() {
+            $('.prev_step, .next_step').prop('disabled', false);
+            if (currentIndex - 1 === 0) {
+                $('.prev_step').fadeOut(100);
+            } else {
+                $('.prev_step').fadeIn(100);
+            }
+        });
+    });
+});
 
 $('.main_slide .slides').slick({
     centerMode: true,
