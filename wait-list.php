@@ -17,13 +17,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="active">
+                    <a href="">
                         <img src="assets/svg/shipping-timed_18995127.svg" alt="" class="svg">
                         История заказов
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" class="active">
                         <img src="assets/svg/wait_list.svg" alt="" class="svg">
                         Лист ожидания
                     </a>
@@ -45,6 +45,30 @@
                         <p class="name">Есть в наличии</p>
                         <p class="value">26 <span>шт.</span></p>
                     </div>
+                </div>
+                <div class="right_block">
+                    <a href="">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left_block">
+                    <a href="">
+                        Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                    </a>
+                    <p class="article">
+                        <span class="name">Код товара:</span>
+                        <span class="value">GR-BOX-LM</span>
+                    </p>
+                    <div class="no_stock">
+                        <p class="name">Нет в наличии</p>
+                    </div>
+                </div>
+                <div class="right_block">
+                    <a href="">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>

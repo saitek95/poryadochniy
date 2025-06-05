@@ -174,6 +174,10 @@ $(document).on('click', '.history_order .item .left_block .info_order', function
     infoHistoryBlock.fadeToggle(100);
 })
 
+$(function(){
+    $("#datepicker").datepicker();
+});
+
 $('.main_slide .slides').slick({
     centerMode: true,
     centerPadding: '20px',

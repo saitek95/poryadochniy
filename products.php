@@ -440,7 +440,6 @@
                     <a href="" class="btn_default">Показать еще</a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
