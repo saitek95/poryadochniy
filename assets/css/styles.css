@@ -258,6 +258,11 @@ header .bottom_block .left_block {
     margin-top: 4px;
 }
 
+.callback_block_messengers span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .menu_catalog_link {
     width: 460px;
     border: 1px solid #C9C9C999;
@@ -3950,4 +3955,120 @@ a.repeat_code_submit {
 
 .favorites .products_list {
     margin-top: 38px;
+}
+
+.modal_callback {
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     display: none;
+    z-index: 999;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal_callback:after {
+    content: '';
+    position: absolute;
+    background: url("../img/нижний элемент 1.png");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.modal_callback:before {
+    content: '';
+    position: absolute;
+    background: #024702;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.popup_callback {
+    padding: 46px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.popup_callback .title {
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Neris SemiBold';
+    color: #FFF;
+    margin-bottom: 42px;
+}
+
+.popup_callback .text {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #FFF;
+}
+
+.popup_callback>form>span {
+    color: #DFD2C2;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.popup_callback input[type="text"] {
+    margin-top: 16px;
+    border: 0;
+    padding: 16px 26px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.popup_callback textarea {
+    height: 85px;
+    border: 0;
+    border-radius: 5px;
+    padding: 16px 26px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.popup_callback .btn_default {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.popup_callback .bottom_policy {
+    color: #FFF;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+.popup_callback .bottom_policy a {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.modal_callback .close_modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.modal_callback .close_modal path {
+    fill: #FFF
 }

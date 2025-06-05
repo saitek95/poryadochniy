@@ -500,7 +500,7 @@
                     <span>+7 988 292-68-99</span>
                 </a>
                 <div class="callback_block_messengers">
-                    <span>Перезвоните мне</span>
+                    <span id="callback">Перезвоните мне</span>
                     <a href="">
                         <img src="assets/svg/head_tg.svg" alt="" class="svg">
                     </a>

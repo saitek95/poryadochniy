@@ -475,6 +475,36 @@
         </div>
     </div>
 </div>
+<div class="modal_callback">
+    <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
+    <div class="popup_callback">
+        <p class="title">
+            Поделитесь вашим опытом, оставьте предложения по улучшению или запросите дополнительную информацию
+        </p>
+        <p class="text">
+            Заполните заявку, мы свяжимся с вами в ближайшее время
+        </p>
+        <form action="">
+            <span>Выберите тип</span>
+            <div class="select">
+                <p data-select="">Консультация <img src="assets/svg/arrow_dropdown_grey.svg" alt="" class="svg"></p>
+                <ul class="dropdown_select">
+                    <li class="data-selected">Москва</li>
+                    <li class="data-selected">Самара</li>
+                    <li class="data-selected">Махачкала</li>
+                    <li class="data-selected">Казань</li>
+                </ul>
+            </div>
+            <input type="text" placeholder="ФИО">
+            <input type="text" placeholder="Телефон или Email">
+            <textarea name="" id="" placeholder="Подробное описание"></textarea>
+            <input type="submit" value="Отправить" class="btn_default">
+            <span class="bottom_policy">
+                Я согласен на  <a href="">обработку персональных данных</a>
+            </span>
+        </form>
+    </div>
+</div>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>

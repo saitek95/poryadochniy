@@ -40,6 +40,7 @@ $(document).on('click', '.close_modal', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
     $('.modal_auth').fadeOut(100);
+    $('.modal_callback').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
@@ -47,12 +48,19 @@ $(document).on('click', '.overlay', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
     $('.modal_auth').fadeOut(100);
+    $('.modal_callback').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
 $(document).on('click', '#modal_cart', function () {
     $('.overlay').fadeIn(100);
     $('.modal_cart').fadeIn(100);
+    $('body').addClass('no-overflow');
+})
+
+$(document).on('click', '#callback', function () {
+    $('.overlay').fadeIn(100);
+    $('.modal_callback').fadeIn(100);
     $('body').addClass('no-overflow');
 })
 
