@@ -167,6 +167,13 @@ $(document).on('click', '.basket-coupon-section input[type="submit"]', function 
     $('.coupon').fadeIn(100);
 })
 
+$(document).on('click', '.history_order .item .left_block .info_order', function () {
+    $(this).toggleClass('active');
+    const parentBlock = $(this).closest('.item');
+    const infoHistoryBlock = parentBlock.find('.info_delivery_order');
+    infoHistoryBlock.fadeToggle(100);
+})
+
 $('.main_slide .slides').slick({
     centerMode: true,
     centerPadding: '20px',
