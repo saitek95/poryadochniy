@@ -215,6 +215,10 @@
                     <input type="text" placeholder="Промокод/штрихкод">
                     <input type="submit" value="Применить">
                 </div>
+                <div class="coupon" style="display: none">
+                    <p>Вы можете набрать товаров еще на</p>
+                    <p>732 ₽</p>
+                </div>
             </div>
             <a href="" class="btn_green">Оформить заказ</a>
         </div>

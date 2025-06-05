@@ -77,19 +77,10 @@ $(document).on('click', '#modal_auth', function () {
     $('body').addClass('no-overflow');
 })
 
-$(document).on('click', '.auth_tabs>p', function () {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    var dataAuthTabs = $(this).data('auth-tabs');
-    $('.auth_content>div').each(function () {
-        if($(this).attr('class') == dataAuthTabs) {
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active')
-        }
-    })
-})
+function getActiveStepsContainer() {
+    return $('.auth_content > div.active').find('[data-steps-container]');
+}
 
-// Кнопка "Вперед"
 $(document).on('click', '.next_step', function () {
     const $currentStep = $(this).closest('.current_step');
     const $stepsContainer = $currentStep.closest('[data-steps-container]');
@@ -102,34 +93,79 @@ $(document).on('click', '.next_step', function () {
     $currentStep.hide('slide', { direction: 'left' }, 500, function() {
         $(this).removeClass('current_step');
         $nextStep.addClass('current_step').show('slide', { direction: 'right' }, 500);
-        $('.popup_auth .prev_step').fadeIn(100); // Показываем кнопку "Назад"
+        $('.popup_auth .prev_step').fadeIn(100);
     });
 });
 
 $(document).on('click', '.prev_step', function() {
-    const $stepsContainer = $('[data-steps-container]');
-    const $currentStep = $stepsContainer.find('.current_step');
-    const $allSteps = $stepsContainer.find('[data-step]');
-    const currentIndex = $allSteps.index($currentStep);
-    console.log('Текущий индекс:', currentIndex, 'Всего шагов:', $allSteps.length);
-    if (currentIndex <= 0) {
-        console.log("Это первый шаг, назад перейти нельзя");
+    const $stepsContainer = getActiveStepsContainer();
+
+    if (!$stepsContainer.length) {
         return;
     }
+    const $currentStep = $stepsContainer.find('.current_step');
+
+    const $allSteps = $stepsContainer.find('[data-step]');
+
+    const currentIndex = $allSteps.index($currentStep);
+
+    if (currentIndex <= 0) {
+        $('.prev_step').fadeOut(100);
+        return;
+    }
+
     const $prevStep = $allSteps.eq(currentIndex - 1);
+
     $('.prev_step, .next_step').prop('disabled', true);
+
     $currentStep.hide('slide', { direction: 'right' }, 500, function() {
         $(this).removeClass('current_step');
+
         $prevStep.addClass('current_step').show('slide', { direction: 'left' }, 500, function() {
             $('.prev_step, .next_step').prop('disabled', false);
-            if (currentIndex - 1 === 0) {
+
+            if ($allSteps.index($prevStep) === 0) {
                 $('.prev_step').fadeOut(100);
-            } else {
-                $('.prev_step').fadeIn(100);
             }
         });
     });
 });
+
+$(document).on('click', '.btn_reg', function () {
+    $('.auth_content_phone').hide('slide', { direction: 'left' }, 500);
+    $('.popup_reg_content').show('slide', { direction: 'right' }, 500).addClass('current_step');
+})
+
+$(document).on('click', '.prev_step_auth', function () {
+    $('.auth_content_phone').show('slide', { direction: 'right' }, 500);
+    $('.popup_reg_content').hide('slide', { direction: 'left' }, 500).addClass('current_step');
+})
+
+$(document).on('click', '[data-auth-tabs]', function() {
+    const target = $(this).data('auth-tabs');
+
+    $('.auth_content > div').removeClass('active');
+
+    $('.' + target).addClass('active');
+
+    const $container = $('.' + target).find('[data-steps-container]');
+    $container.find('[data-step]').removeClass('current_step').hide();
+    $container.find('[data-step]:first').addClass('current_step').show();
+
+    $('.prev_step').fadeOut(100);
+});
+
+$(document).on('click', '.no_whatsapp', function(e) {
+    e.preventDefault();
+    $(this).closest('[data-step]').hide('slide', {direction: 'left'}, 500, function() {
+        $(this).removeClass('current_step');
+        $(this).next('[data-step]').addClass('current_step').show('slide', {direction: 'right'}, 500);
+    });
+});
+
+$(document).on('click', '.basket-coupon-section input[type="submit"]', function () {
+    $('.coupon').fadeIn(100);
+})
 
 $('.main_slide .slides').slick({
     centerMode: true,

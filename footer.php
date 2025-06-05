@@ -390,7 +390,7 @@
                             Войти в личный кабинет
                         </a>
                         <div class="bottom_info_auth">
-                            Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                            Если вы еще не зарегистрированы , то пройдите <a class="btn_reg">Регистрацию</a>
                         </div>
                     </div>
                     <div data-step style="display: none">
@@ -430,7 +430,7 @@
                             Войти в личный кабинет
                         </a>
                         <div class="bottom_info_auth">
-                            Если вы еще не зарегистрированы , то пройдите <a href="">Регистрацию</a>
+                            Если вы еще не зарегистрированы , то пройдите <a class="btn_reg">Регистрацию</a>
                         </div>
                     </div>
                     <div data-step style="display: none">
@@ -441,6 +441,37 @@
                     </div>
                 </form>
             </div>
+            <div class="popup_reg_content">
+                <form action="">
+                    <div class="current_step">
+                        <h4>Регистрация</h4>
+                        <input type="text" placeholder="ФИО">
+                        <input type="text" class="phone" placeholder="Телефон">
+                        <input type="text" class="email" placeholder="Email">
+                        <input type="password" placeholder="Пароль">
+                        <input type="password" placeholder="Подтверждение пароля">
+                        <p>Уже зарегистрированы? <a class="prev_step_auth">Войти в личный кабинет</a></p>
+                    </div>
+                    <div class="btn_reg">
+                        <input type="submit" class="btn_default" value="Зарегистрироваться">
+                        <input type="checkbox" name="reg" id="reg">
+                        <label for="reg">
+                            Я даю свое согласие <a href="">на обработку и хранение персональных данных</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal_success_fast_order">
+    <div class="order_success">
+        <p>
+            Спасибо - ваша заявка отправлена - наш менеджер свяжется с вами в течении рабочего времени
+        </p>
+        <div class="bottom_btns">
+            <a href="" class="btn_green">Перейти в каталог</a>
+            <a href="" class="btn_default">Перейти к заказам</a>
         </div>
     </div>
 </div>

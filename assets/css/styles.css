@@ -2495,6 +2495,7 @@ input[type="checkbox"]+label:after {
     border-radius: 6px;
     font-size: 18px;
     font-weight: 300;
+    box-sizing: border-box;
 }
 
 .delete_cart a {
@@ -2758,6 +2759,19 @@ span.basket-item-amount-btn-plus:before {
     cursor: pointer;
 }
 
+.coupon {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.coupon p:last-child {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 .order_total .btn_green {
     font-size: 20px;
     font-weight: 600;
@@ -2918,6 +2932,8 @@ span.basket-item-amount-btn-plus:before {
     border-radius: 20px;
     display: none;
     z-index: 999;
+    max-height: 553px;
+    overflow: hidden auto;
 }
 
 .popup_auth .close_modal {
@@ -2966,22 +2982,30 @@ span.basket-item-amount-btn-plus:before {
 }
 
 .auth_content_email,
-.auth_content_phone{
+.auth_content_phone,
+.popup_reg_content {
     display: none;
 }
 
 .auth_content_email.active,
-.auth_content_phone.active {
+.auth_content_phone.active,
+.popup_reg_content.active {
     display: block;
 }
 
-.auth_content input[type="text"] {
+.auth_content input[type="text"],
+.popup_reg_content input[type="text"],
+.popup_reg_content input[type="password"] {
     width: 100%;
     border: 1px solid #C9C9C999;
     border-radius: 6px;
     padding: 16px 22px;
     font-size: 16px;
     margin-bottom: 24px;
+}
+
+.popup_reg_content {
+    max-height: 80%;
 }
 
 .auth_content .btn_default {
@@ -3032,10 +3056,6 @@ a.repeat_code_submit {
     top: 0;
     left: 0;
 }
-.current_step {
-    display: block;
-    position: relative;
-}
 
 .auth_content h5 {
     font-size: 26px;
@@ -3052,8 +3072,246 @@ a.repeat_code_submit {
     align-items: center;
     gap: 6px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .popup_auth .prev_step span {
     color: #C9C9C9;
+}
+
+.auth_content_phone [data-steps-container],
+.auth_content_email [data-steps-container] {
+    position: relative;
+    overflow: hidden;
+}
+
+.auth_content_phone [data-step],
+.auth_content_email [data-step] {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup_reg_content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.auth_content_phone .current_step,
+.auth_content_email .current_step,
+.popup_reg_content.current_step {
+    display: block;
+    position: relative;
+}
+
+.order_success {
+    padding: 206px 66px 161px;
+    border-radius: 20px;
+    background: #F1F6F7 url('../img/order_success.png') no-repeat 85% center;
+    max-width: 1323px;
+}
+
+.order_success h1 {
+    font-size: 48px;
+    font-family: 'Neris SemiBold', serif;
+    margin-bottom: 24px;
+}
+
+.order_success p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.order_success .bottom_btns {
+    display: flex
+;
+    align-items: center;
+    gap: 32px;
+}
+
+.order_success .bottom_btns a {
+    width: 222px;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order_fast .cart_info_sum {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-top: 27px;
+}
+
+.order_fast .right_block {
+    width: 524px;
+}
+
+.order_fast .order_total {
+    width: 100%;
+}
+
+.order_fast .basket_items {
+    gap: 54px;
+}
+
+.order_fast .basket-item-price {
+    padding-bottom: 32px;
+}
+
+.order_fast .prices_block {
+    white-space: nowrap;
+}
+
+.order_fast .delete_cart {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #C9C9C999;
+    white-space: nowrap;
+}
+
+.order_block_reg {
+    background: linear-gradient(102.24deg, #DCF9FF 3.81%, #DFFFD3 49.75%, #FFF3E9 102.1%);
+    border-radius: 20px;
+    padding: 31px;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.order_block_reg p {
+    font-size: 26px;
+    font-weight: 600;
+    color: #024702;
+    margin-bottom: 24px;
+    max-width: 277px;
+}
+
+.order_block_reg .btn_green {
+    padding: 14px 32px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.order_block_reg img {
+    position: absolute;
+    top: -120px;
+    right: -70px;
+    rotate: 30deg;
+    height: 393px;
+    max-height: 395px;
+}
+
+.info_fast_cart p {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.info_fast_cart p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.order_fast .contact_info {
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid #C9C9C999;
+}
+
+.order_fast .title,
+.order_fast .text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.order_fast .contact_info .icon {
+    width: 30px;
+    height: 30px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid #C9C9C999;
+}
+
+.order_fast .contact_info .title {
+    display: flex
+;
+    align-items: center;
+    gap: 16px;
+}
+
+.order_fast .contact_info .phone {
+    padding: 18px 26px;
+    border: 1px solid #C9C9C999;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.order_fast .contact_info form {
+    display: grid
+;
+    grid-template-columns: 371px auto;
+    gap: 20px;
+}
+
+.order_fast .contact_info .btn_green {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal_success_fast_order {
+    position: fixed;
+    max-width: 1353px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+     display: none;
+    z-index: 999;
+}
+
+.modal_success_fast_order p {
+    font-size: 48px;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+.modal_success_fast_order .order_success {
+    padding: 102px 66px;
+    background-position: right;
+    background-size: contain;
+}
+
+.popup_reg_content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #C9C9C9;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.popup_reg_content label {
+    display: block !important;
+}
+
+.popup_reg_content input[type="checkbox"]+label:after {
+    top: 0;
+}
+
+.popup_reg_content input[type="checkbox"]:checked+:before {
+    top: 35%;
 }
