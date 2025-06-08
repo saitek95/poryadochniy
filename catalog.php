@@ -86,7 +86,7 @@
         </a>
     </div>
     <div class="big_block with_img">
-        <a href="" style="background: url('assets/img/front-view-hand-held-present 1.png')">
+        <a href="" style="background: url('assets/img/front-view-hand-held-present 1.png'), #afd5e6">
             <p class="name">Идеально для подарка</p>
         </a>
     </div>

@@ -185,6 +185,44 @@ $(document).on('click', '.history_order .item .left_block .info_order', function
 $(function(){
     $("#datepicker").datepicker();
 });
+$(document).ready(function() {
+    function insertElHead() {
+        const logoBlock = $('.logo');
+        const headCallbackBlock = $('.head__callback_block');
+        const headTopBlock = $('header .top_block');
+        const windowWidth = $(window).width();
+        const headMenu = $('header .menu');
+
+        if(windowWidth < 1440) {
+            logoBlock.prependTo(headTopBlock);
+        } else {
+            logoBlock.prependTo('header .bottom_block .left_block');
+        }
+
+        if(windowWidth < 1240) {
+            headCallbackBlock.insertAfter(logoBlock);
+        } else {
+            headCallbackBlock.insertAfter('.head__search');
+        }
+
+        if(windowWidth < 1440) {
+            headMenu.insertBefore(headTopBlock);
+        } else {
+            headMenu.insertBefore('header .top_block .right_btns');
+        }
+
+        if(windowWidth < 768) {
+            $('.sticker.bestsellers span').text('Хит')
+        } else {
+            $('.sticker.bestsellers span').text('Хит продаж')
+        }
+    }
+
+    insertElHead();
+    $(window).resize(function() {
+        insertElHead();
+    });
+})
 
 $('.main_slide .slides').slick({
     centerMode: true,

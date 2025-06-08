@@ -63,6 +63,40 @@
     </div>
     <img src="assets/svg/нижний%20элемент%201.svg" alt="" class="svg">
 </footer>
+<div class="bottom_panel">
+    <ul>
+        <li>
+            <a href="">
+                <img src="assets/svg/bottom_panel_home.svg" alt="" class="svg">
+                <span>Главная</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="assets/svg/bottom_panel_catalog.svg" alt="" class="svg">
+                <span>Каталог</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="assets/svg/bottom_panel_favorites.svg" alt="" class="svg">
+                <span>Избранное</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="assets/svg/bottom_panel_cart.svg" alt="" class="svg">
+                <span>Корзина</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="assets/svg/bottom_panel_user.svg" alt="" class="svg">
+                <span>Профиль</span>
+            </a>
+        </li>
+    </ul>
+</div>
 <div class="overlay"></div>
 <div class="modal_cart">
     <div class="popup_cart">
