@@ -72,7 +72,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a >
                 <img src="assets/svg/bottom_panel_catalog.svg" alt="" class="svg">
                 <span>Каталог</span>
             </a>
@@ -84,7 +84,7 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a data-modal="modal_cart">
                 <img src="assets/svg/bottom_panel_cart.svg" alt="" class="svg">
                 <span>Корзина</span>
             </a>

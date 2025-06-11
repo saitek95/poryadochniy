@@ -42,8 +42,6 @@
                     <input type="text" value="г. Махачкала, улица Гагарина, 13В">
                     <span class="error">Не коректно введен телефон</span>
                     <input type="text" class="phone" value="+7 988 292-68-99">
-                    <span class="error">Не коректно введен телефон</span>
-                    <input type="text" class="phone" value="+7 988 292-68-99">
                     <span class="error">Не коректно введен email</span>
                     <input type="text" class="phone" value="poryadochniy.shop@gmail.com">
                     <input type="submit" class="btn_default" value="Сохранить изменения">

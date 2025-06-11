@@ -515,7 +515,7 @@
                 <img src="assets/svg/head_favorites.svg" alt="" class="svg">
                 Избранное
             </a>
-            <a id="modal_cart">
+            <a data-modal="modal_cart">
                 <img src="assets/svg/head_cart.svg" alt="" class="svg">
                 Корзина
             </a>

@@ -14,6 +14,7 @@
             Кухня
         </h1>
         <div class="filter">
+            <img src="assets/svg/close_modal.svg" alt="" class="svg close_modal">
             <div class="top_block">
                 <p class="title">Фильтры</p>
                 <a href="" class="btn_default">Сбросить</a>
@@ -76,6 +77,9 @@
     </div>
     <div class="right_block">
         <div class="top_block">
+            <div class="btn_filter">
+                <img src="assets/svg/fi-rr-settings-sliders.svg" alt="" class="svg">
+            </div>
             <div class="sort_block">
                 <div class="sort">
                     <a href="">По популярности <img src="assets/svg/arrow_sort.svg" alt=""></a>

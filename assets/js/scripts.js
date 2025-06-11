@@ -41,6 +41,7 @@ $(document).on('click', '.close_modal', function () {
     $('.modal_cart').fadeOut(100);
     $('.modal_auth').fadeOut(100);
     $('.modal_callback').fadeOut(100);
+    $('.products_container .filter').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
@@ -52,7 +53,7 @@ $(document).on('click', '.overlay', function () {
     $('body').removeClass('no-overflow');
 })
 
-$(document).on('click', '#modal_cart', function () {
+$(document).on('click', '[data-modal="modal_cart"]', function () {
     $('.overlay').fadeIn(100);
     $('.modal_cart').fadeIn(100);
     $('body').addClass('no-overflow');
@@ -212,9 +213,9 @@ $(document).ready(function() {
         }
 
         if(windowWidth < 768) {
-            $('.sticker.bestsellers span').text('Хит')
+            $('.sticker.bestsellers span').text('Хит');
         } else {
-            $('.sticker.bestsellers span').text('Хит продаж')
+            $('.sticker.bestsellers span').text('Хит продаж');
         }
     }
 
@@ -222,6 +223,10 @@ $(document).ready(function() {
     $(window).resize(function() {
         insertElHead();
     });
+})
+
+$(document).on('click', '.btn_filter', function () {
+    $('.products_container .filter').fadeIn(100);
 })
 
 $('.main_slide .slides').slick({
@@ -277,25 +282,6 @@ var productImgSliderBig = new Swiper(".product_images_slider_big", {
         el: ".swiper-pagination",
         clickable: true,
     },
-});
-
-const productSlider = new Swiper('.product_slider', {
-    spaceBetween: 35,
-    slidesPerView: 5,
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1280: {
-            slidesPerView: 5,
-            spaceBetween: 16,
-        }
-    }
 });
 
 Fancybox.bind("[data-fancybox]", {

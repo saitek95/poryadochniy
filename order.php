@@ -33,8 +33,27 @@
                             <a href="" class="basket-item-image-link">
                                 <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
                             </a>
+                            <div class="basket-items-list-item-removes">
+                                <div class="wish_item_button item-action">
+                                    <a href="" class="wishlist icon-custom active">
+                                        <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                                    </a>
+                                </div>
+                                <div class="basket-item-block-actions">
+                                   <span class="basket-item-actions-remove">
+                                        <img src="assets/svg/delete_prod_cart.svg" alt="" class="svg">
+                                   </span>
+                                </div>
+                            </div>
                         </td>
                         <td class="basket-items-list-item-descriptions-inner">
+                            <div class="basket-item-price-current">
+                                <div class="prices_block">
+                                    <div class="discount">50%</div>
+                                    <div class="price">145 ₽</div>
+                                    <div class="old_price">145 ₽</div>
+                                </div>
+                            </div>
                             <div class="basket-item-block-info">
                                 <h3 class="basket-item-info-name">
                                     <a href="" class="basket-item-info-name-link">
@@ -88,8 +107,27 @@
                             <a href="" class="basket-item-image-link">
                                 <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
                             </a>
+                            <div class="basket-items-list-item-removes">
+                                <div class="wish_item_button item-action">
+                                    <a href="" class="wishlist icon-custom active">
+                                        <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                                    </a>
+                                </div>
+                                <div class="basket-item-block-actions">
+                                   <span class="basket-item-actions-remove">
+                                        <img src="assets/svg/delete_prod_cart.svg" alt="" class="svg">
+                                   </span>
+                                </div>
+                            </div>
                         </td>
                         <td class="basket-items-list-item-descriptions-inner">
+                            <div class="basket-item-price-current">
+                                <div class="prices_block">
+                                    <div class="discount">50%</div>
+                                    <div class="price">145 ₽</div>
+                                    <div class="old_price">145 ₽</div>
+                                </div>
+                            </div>
                             <div class="basket-item-block-info">
                                 <h3 class="basket-item-info-name">
                                     <a href="" class="basket-item-info-name-link">
@@ -121,7 +159,7 @@
                             </div>
                             <div class="basket-items-list-item-removes">
                                 <div class="wish_item_button item-action">
-                                    <a href="" class="wishlist icon-custom">
+                                    <a href="" class="wishlist icon-custom active">
                                         <img src="assets/svg/add_favorites.svg" alt="" class="svg">
                                     </a>
                                 </div>
@@ -143,8 +181,27 @@
                             <a href="" class="basket-item-image-link">
                                 <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
                             </a>
+                            <div class="basket-items-list-item-removes">
+                                <div class="wish_item_button item-action">
+                                    <a href="" class="wishlist icon-custom active">
+                                        <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                                    </a>
+                                </div>
+                                <div class="basket-item-block-actions">
+                                   <span class="basket-item-actions-remove">
+                                        <img src="assets/svg/delete_prod_cart.svg" alt="" class="svg">
+                                   </span>
+                                </div>
+                            </div>
                         </td>
                         <td class="basket-items-list-item-descriptions-inner">
+                            <div class="basket-item-price-current">
+                                <div class="prices_block">
+                                    <div class="discount">50%</div>
+                                    <div class="price">145 ₽</div>
+                                    <div class="old_price">145 ₽</div>
+                                </div>
+                            </div>
                             <div class="basket-item-block-info">
                                 <h3 class="basket-item-info-name">
                                     <a href="" class="basket-item-info-name-link">
@@ -176,7 +233,7 @@
                             </div>
                             <div class="basket-items-list-item-removes">
                                 <div class="wish_item_button item-action">
-                                    <a href="" class="wishlist icon-custom">
+                                    <a href="" class="wishlist icon-custom active">
                                         <img src="assets/svg/add_favorites.svg" alt="" class="svg">
                                     </a>
                                 </div>

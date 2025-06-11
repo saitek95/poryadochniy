@@ -177,278 +177,188 @@
     </div>
     <div class="other_products_in_card">
         <h4>С этим покупают</h4>
-        <div class="product_slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+        <div class="grid_5">
+             <div class="product">
+                 <div class="sticker bestsellers">
+                     <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                     <span>Хиты продаж</span>
+                 </div>
+                 <div class="add_favorites">
+                     <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                 </div>
+                 <a href="">
+                     <div class="product_images">
+                         <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                     </div>
+                 </a>
+                 <div class="prices_block">
+                     <div class="discount">50%</div>
+                     <div class="price">145 ₽</div>
+                     <div class="old_price">145 ₽</div>
+                 </div>
+                 <a href class="name">
+                     Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                 </a>
+                 <div class="info_count count_many">
+                     <span>Много</span>
+                     <img src="assets/svg/count_many.svg" alt="" class="svg">
+                 </div>
+                 <div class="add_in_basket">
+                     <span>В корзину</span>
+                     <div class="in_basketed">
+                         <span>Добавлено</span>
+                         <div class="input_count">
+                             <span>-</span>
+                             <input type="text" value="1">
+                             <span>+</span>
+                         </div>
+                     </div>
+                </div>
+             </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
                     </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
@@ -457,278 +367,188 @@
     </div>
     <div class="other_products_in_card">
         <h4>Похожие товары</h4>
-        <div class="product_slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+        <div class="grid_5">
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
+                </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
+                </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="product">
+                <div class="sticker bestsellers">
+                    <img src="assets/svg/bestsellers.svg" alt="" class="svg">
+                    <span>Хиты продаж</span>
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="add_favorites">
+                    <img src="assets/svg/add_favorites.svg" alt="" class="svg">
                 </div>
-                <div class="swiper-slide">
-                    <div class="product">
-                        <div class="sticker bestsellers">
-                            <img src="assets/svg/bestsellers.svg" alt="" class="svg">
-                            <span>Хиты продаж</span>
-                        </div>
-                        <div class="add_favorites">
-                            <img src="assets/svg/add_favorites.svg" alt="" class="svg">
-                        </div>
-                        <a href="">
-                            <div class="product_images">
-                                <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
-                            </div>
-                        </a>
-                        <div class="prices_block">
-                            <div class="discount">50%</div>
-                            <div class="price">145 ₽</div>
-                            <div class="old_price">145 ₽</div>
-                        </div>
-                        <a href class="name">
-                            Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
-                        </a>
-                        <div class="info_count count_many">
-                            <span>Много</span>
-                            <img src="assets/svg/count_many.svg" alt="" class="svg">
-                        </div>
-                        <div class="add_in_basket">
-                            <span>В корзину</span>
-                            <div class="in_basketed">
-                                <span>Добавлено</span>
-                                <div class="input_count">
-                                    <span>-</span>
-                                    <input type="text" value="1">
-                                    <span>+</span>
-                                </div>
-                            </div>
+                <a href="">
+                    <div class="product_images">
+                        <img src="assets/img/e0a3117bcc13b795e34596cb2d527053.png" alt="">
+                    </div>
+                </a>
+                <div class="prices_block">
+                    <div class="discount">50%</div>
+                    <div class="price">145 ₽</div>
+                    <div class="old_price">145 ₽</div>
+                </div>
+                <a href class="name">
+                    Комод на колесах deluxe, 4 ящика, 300х385х690 мм (серый)
+                </a>
+                <div class="info_count count_many">
+                    <span>Много</span>
+                    <img src="assets/svg/count_many.svg" alt="" class="svg">
+                </div>
+                <div class="add_in_basket">
+                    <span>В корзину</span>
+                    <div class="in_basketed">
+                        <span>Добавлено</span>
+                        <div class="input_count">
+                            <span>-</span>
+                            <input type="text" value="1">
+                            <span>+</span>
                         </div>
                     </div>
                 </div>
