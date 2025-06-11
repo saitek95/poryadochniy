@@ -193,6 +193,7 @@ $(document).ready(function() {
         const headTopBlock = $('header .top_block');
         const windowWidth = $(window).width();
         const headMenu = $('header .menu');
+        const lkBtn = $('.personal_lk .btn_green');
 
         if(windowWidth < 1440) {
             logoBlock.prependTo(headTopBlock);
@@ -214,8 +215,18 @@ $(document).ready(function() {
 
         if(windowWidth < 768) {
             $('.sticker.bestsellers span').text('Хит');
+            lkBtn.insertAfter('.personal_lk .content .banner_block');
+            lkBtn.insertAfter('.history_order');
+            lkBtn.insertAfter('.wait_list');
         } else {
             $('.sticker.bestsellers span').text('Хит продаж');
+            lkBtn.insertAfter('.personal_lk .sidebar_menu ul');
+        }
+
+        if(windowWidth < 1136) {
+            $('.favorites .top_block .sort p').text('Сортировка');
+        } else {
+            $('.favorites .top_block .sort p').text('Сортировать');
         }
     }
 
@@ -223,6 +234,10 @@ $(document).ready(function() {
     $(window).resize(function() {
         insertElHead();
     });
+})
+
+$(document).on('click', '.favorites .top_block .sort p', function () {
+    $('.favorites .top_block .sort ul').toggleClass('active');
 })
 
 $(document).on('click', '.btn_filter', function () {

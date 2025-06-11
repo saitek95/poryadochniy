@@ -7,6 +7,7 @@
     </ul>
 </div>
 <div class="max_width_theme favorites">
+    <div class="page_title">Избранное</div>
     <div class="top_block">
         <div class="sort">
             <p>Сортировать:</p>
