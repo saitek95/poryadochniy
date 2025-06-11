@@ -263,6 +263,7 @@ header .bottom_block .left_block {
     align-items: center;
     gap: 4px;
     margin-top: 4px;
+    position: relative;
 }
 
 .callback_block_messengers span:hover {
@@ -4179,6 +4180,376 @@ a.repeat_code_submit {
     display: none;
 }
 
+.modal_exceeded_product {
+    position: absolute;
+    max-width: 571px;
+    width: 100%;
+    top: -80px;
+    right: 0;
+    border-radius: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.popup_exceeded_product {
+    padding: 36.5px;
+    border: 1px solid #C9C9C999;
+    border-radius: 20px;
+    background: #FFF;
+    position: relative;
+    z-index: -2;
+}
+
+.popup_exceeded_product .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 16px;
+    font-family: 'Neris SemiBold';
+    max-width: 340px;
+    margin: auto;
+    line-height: 100%;
+}
+
+.popup_exceeded_product .text {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 24px;
+    text-align: center;
+    max-width: 416px;
+    margin: auto;
+}
+
+.popup_exceeded_product>a {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.popup_exceeded_product>a svg {
+    width: 25px;
+    height: 25px;
+}
+
+.popup_exceeded_product form {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.popup_exceeded_product form .phone {
+    border: 1px solid #024702;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.popup_exceeded_product form .text_form_policy {
+    grid-column: span 2;
+    text-align: center;
+    max-width: 179px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.popup_exceeded_product form .text_form_policy a {
+    font-weight: 600;
+}
+
+.popup_exceeded_product:after {
+    content: '';
+    background-image: url("../img/нижний элемент 1.png");
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 328px;
+    max-height: 203px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.modal_callback_head {
+    position: absolute;
+    width: 320px;
+    top: 30px;
+    left: -160px;
+    border-radius: 20px;
+     display: none;
+    z-index: 999;
+}
+
+.popup_callback_head {
+    padding: 22px 35px;
+    background: #024702;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+}
+
+.popup_callback_head:after {
+    content: '';
+    background-image: url("../img/нижний элемент 1.png");
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.popup_callback_head .title {
+    font-size: 30px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 32px;
+    text-align: center;
+    color: #FFF;
+}
+
+.popup_callback_head .phone {
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.popup_callback_head .btn_default {
+    padding: 14px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.popup_callback_head .policy {
+    color: #FFF;
+    text-align: center;
+}
+
+.popup_callback_head .policy a {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.modal_callback_head svg {
+    position: absolute;
+    top: -8px;
+    right: 30px;
+}
+
+.modal_callback_write {
+    position: fixed;
+    max-width: 730px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     display: none;
+    z-index: 999;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.popup_callback_write {
+    background: #024702;
+    padding: 55px 27px;
+    position: relative;
+    z-index: -2;
+}
+
+.popup_callback_write:after {
+    content: '';
+    background-image: url("../img/нижний элемент 1.png");
+    background-size: 80%;
+    background-position: center bottom;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.modal_callback_write .close_modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.modal_callback_write .close_modal path {
+    fill: #FFF
+}
+
+.popup_callback_write .title {
+    font-size: 30px;
+    margin-bottom: 32px;
+    color: #FFF;
+    font-family: 'Neris SemiBold';
+}
+
+.popup_callback_write input[type="text"] {
+    font-size: 16px;
+    padding: 16px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.popup_callback_write .grid_2 {
+    gap: 16px
+}
+
+.popup_callback_write textarea {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 16px;
+    height: 152px;
+    margin-bottom: 16px;
+}
+
+.popup_callback_write .form_footer {
+    display: flex
+;
+    gap: 16px;
+    align-items: center;
+}
+
+.popup_callback_write .form_footer .btn_default {
+    width: 250px;
+    padding: 14px;
+}
+
+.popup_callback_write .form_footer .form_policy {
+    max-width: 177px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.popup_callback_write .form_footer .form_policy a {
+    font-weight: 600;
+    color: #FFF;
+}
+
+.modal_city {
+    position: fixed;
+    max-width: 968px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+    z-index: 999;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 100%;
+    height: 80vh;
+}
+
+.popup_city {
+    padding: 30px 20px 100px;
+    background: #FFF;
+    overflow: auto;
+    max-height: 100%;
+    position: relative;
+}
+
+.modal_city .close_modal {
+    position: absolute;
+    right: 27px;
+    top: 27px;
+    cursor: pointer;
+}
+
+.modal_city .close_modal path {
+    fill: #131022
+}
+
+.popup_city .title {
+    font-size: 26px;
+    font-family: 'Neris SemiBold';
+    margin-bottom: 40px;
+}
+
+.search_city .search {
+    border: 1px solid #B3B3B385;
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.top_city {
+    display: flex
+;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 84px;
+}
+
+.top_city a {
+    font-size: 18px;
+    padding: 14px 26px;
+    background: #F8F8F8;
+    border-radius: 7px;
+}
+
+.list_city {
+    column-count: 4;
+}
+
+.list_city>ul {
+    display: flex
+;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.list_city .parent {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.list_city .children a {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.popup_city:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 98px;
+    background: linear-gradient(0deg, #FFFFFF 19.33%, rgba(255, 255, 255, 0) 175.69%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 @media (max-width: 1550px) {
     .head__search {
         min-width: 485px;
@@ -5246,6 +5617,7 @@ a.repeat_code_submit {
 
     .accordion li {
         padding: 16px;
+        margin-bottom: 16px;
     }
 
     .news-list .item {
@@ -5431,6 +5803,44 @@ a.repeat_code_submit {
 
     .certs .banner_block {
         display: none;
+    }
+
+    .accordion li svg {
+        width: 14px;
+    }
+
+    .popup_exceeded_product {
+        margin: 16px;
+    }
+
+    .popup_exceeded_product form {
+        grid-template-columns: 1fr;
+    }
+
+    .popup_exceeded_product form .text_form_policy {
+        grid-column: span 1;
+    }
+
+    .products_container {
+        gap: 0
+    }
+
+    .list_city {
+        column-count: 2;
+    }
+
+    .popup_city:after {
+        height: 20px;
+    }
+
+    .modal_city {
+        height: 100%;
+        width: 100%;
+    }
+
+    .top_city {
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 

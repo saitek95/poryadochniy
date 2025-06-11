@@ -40,29 +40,55 @@ $(document).on('click', '.close_modal', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
     $('.modal_auth').fadeOut(100);
-    $('.modal_callback').fadeOut(100);
-    $('.products_container .filter').fadeOut(100);
+    $('.modal_callback_head').fadeOut(100);
+    $('.modal_callback_write').fadeOut(100);
     $('body').removeClass('no-overflow');
+})
+
+$(document).on('click', '.filter .close_modal', function () {
+    $('.products_container .filter').fadeOut(100);
 })
 
 $(document).on('click', '.overlay', function () {
     $('.overlay').fadeOut(100);
     $('.modal_cart').fadeOut(100);
     $('.modal_auth').fadeOut(100);
-    $('.modal_callback').fadeOut(100);
+    $('.modal_callback_head').fadeOut(100);
+    $('.modal_callback_write').fadeOut(100);
     $('body').removeClass('no-overflow');
 })
 
-$(document).on('click', '[data-modal="modal_cart"]', function () {
-    $('.overlay').fadeIn(100);
-    $('.modal_cart').fadeIn(100);
-    $('body').addClass('no-overflow');
-})
+// $(document).on('click', '[data-modal="modal_cart"]', function () {
+//     $('.overlay').fadeIn(100);
+//     $('.modal_cart').fadeIn(100);
+//     $('body').addClass('no-overflow');
+// })
 
-$(document).on('click', '#callback', function () {
-    $('.overlay').fadeIn(100);
-    $('.modal_callback').fadeIn(100);
-    $('body').addClass('no-overflow');
+// $(document).on('click', '#modal_callback_write', function (e) {
+//     e.preventDefault();
+//     $('.overlay').fadeIn(100);
+//     $('.modal_callback_write').fadeIn(100);
+//     $('body').addClass('no-overflow');
+// })
+
+// $(document).on('click', '#callback', function () {
+//     $('.overlay').fadeIn(100);
+//     $('.modal_callback_head').fadeIn(100);
+//     $('body').addClass('no-overflow');
+// })
+
+$(document).on('click', '[data-modal]', function (e) {
+    e.preventDefault();
+    const modalTarget = $(this).data('modal');
+    const modal = $('.modals').find('.' + modalTarget);
+    modal.fadeIn(100);
+    if (modal.length) {
+        $('.modals [class^="modal_"]').hide();
+        modal.fadeIn(100);
+        $('.overlay').fadeIn(100);
+    } else {
+        console.error('Modal not found:', modalTarget);
+    }
 })
 
 $(document).on('click', '.select p', function () {
@@ -80,11 +106,11 @@ $(document).on('click', '[href="#show_more_prop"]', function () {
     $(this).fadeOut();
 })
 
-$(document).on('click', '#modal_auth', function () {
-    $('.overlay').fadeIn(100);
-    $('.modal_auth').fadeIn(100);
-    $('body').addClass('no-overflow');
-})
+// $(document).on('click', '#modal_auth', function () {
+//     $('.overlay').fadeIn(100);
+//     $('.modal_auth').fadeIn(100);
+//     $('body').addClass('no-overflow');
+// })
 
 function getActiveStepsContainer() {
     return $('.auth_content > div.active').find('[data-steps-container]');

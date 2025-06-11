@@ -77,7 +77,7 @@
     </div>
     <div class="right_block">
         <div class="top_block">
-            <div class="btn_filter">
+            <div class="btn_filter" data-modal="filter">
                 <img src="assets/svg/fi-rr-settings-sliders.svg" alt="" class="svg">
             </div>
             <div class="sort_block">
@@ -443,6 +443,29 @@
                 <div class="show_more">
                     <a href="" class="btn_default">Показать еще</a>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_exceeded_product">
+        <div class="popup_exceeded_product">
+            <p class="title">Превышен фактический остаток товаров</p>
+            <p class="text">
+                Оставьте свой номер телефона или позвоните нам, если хотите заказать больше
+            </p>
+            <a href="tel:+7 988 292-68-99">
+                <img src="assets/svg/bx-phone-call.svg" alt="" class="svg">
+                +7 988 292-68-99
+            </a>
+            <form action="">
+                <input type="text" class="phone" placeholder="Телефон">
+                <input type="submit" class="btn_default" value="Отправить">
+                <p class="text_form_policy">
+                    Я согласен на <a href="">обработку персональных данных</a>
+                </p>
+            </form>
+            <div class="form_success" style="display: none">
+                <p class="title">Спасибо, заявка успешно отправлена</p>
+                <p class="text">Мы свяжемся с вами в течении одного часа</p>
             </div>
         </div>
     </div>

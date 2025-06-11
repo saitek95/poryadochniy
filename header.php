@@ -32,7 +32,7 @@
                     <span>Махачкала</span>
                 </a>
             </div>
-            <a href="" class="btn_default">
+            <a href="" class="btn_default" data-modal="modal_callback_write">
                 Напишите нам
             </a>
         </div>
@@ -498,15 +498,31 @@
                 <a href="tel:+79882926899">
                     <img src="assets/svg/bx-phone-call.svg" alt="" class="svg">
                     <span>+7 988 292-68-99</span>
+
                 </a>
                 <div class="callback_block_messengers">
-                    <span id="callback">Перезвоните мне</span>
+                    <span data-modal="modal_callback_head">Перезвоните мне</span>
                     <a href="">
                         <img src="assets/svg/head_tg.svg" alt="" class="svg">
                     </a>
                     <a href="">
                         <img src="assets/svg/head_wa.svg" alt="" class="svg">
                     </a>
+                    <div class="modal_callback_head">
+                        <img src="assets/svg/Polygon%204.svg" alt="" class="svg">
+                        <div class="popup_callback_head">
+                            <p class="title">
+                                Заказать звонок
+                            </p>
+                            <form action="">
+                                <input type="text" class="phone" placeholder="Телефон">
+                                <input type="submit" class="btn_default" value="Отправить">
+                                <p class="policy">
+                                    Я согласен на <a href="">обработку персональных данных</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -519,7 +535,7 @@
                 <img src="assets/svg/head_cart.svg" alt="" class="svg">
                 Корзина
             </a>
-            <a id="modal_auth">
+            <a data-modal="modal_auth">
                 <img src="assets/svg/head_lk.svg" alt="" class="svg">
                 Войти
             </a>
