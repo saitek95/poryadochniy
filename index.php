@@ -2,19 +2,25 @@
 <div class="main_slide">
     <div class="max_width_theme">
         <div class="slides">
-            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+            <div class="left_text right_img" style="background: #F1F6F7">
+                <img src="assets/img/5137a0d4257203c74d2c7ca347557ba1198c6035 (1).jpg" alt="" class="img_1">
+                <img src="assets/img/нижний элемент 1.png" alt="" class="img_2">
                 <p class="title">
                     Выгодная цена на Столовые приборы и наборы
                 </p>
                 <a href="" class="btn_green">Перейти</a>
             </div>
-            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+            <div class="left_text right_img" style="background: #F1F6F7">
+                <img src="assets/img/5137a0d4257203c74d2c7ca347557ba1198c6035 (1).jpg" alt="" class="img_1">
+                <img src="assets/img/нижний элемент 1.png" alt="" class="img_2">
                 <p class="title">
                     Выгодная цена на Столовые приборы и наборы
                 </p>
                 <a href="" class="btn_green">Перейти</a>
             </div>
-            <div class="left_text right_img" style="background: url('assets/img/supplies-composition-with-blue-background-flat-lay_23-2149491450 1.png'), url('assets/img/нижний элемент 1.png'), #F1F6F7">
+            <div class="left_text right_img" style="background: #F1F6F7">
+                <img src="assets/img/5137a0d4257203c74d2c7ca347557ba1198c6035 (1).jpg" alt="" class="img_1">
+                <img src="assets/img/нижний элемент 1.png" alt="" class="img_2">
                 <p class="title">
                     Выгодная цена на Столовые приборы и наборы
                 </p>

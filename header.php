@@ -501,7 +501,7 @@
 
                 </a>
                 <div class="callback_block_messengers">
-                    <span data-modal="modal_callback_head">Перезвоните мне</span>
+                    <span data-modal="modal_callback_write">Перезвоните мне</span>
                     <a href="">
                         <img src="assets/svg/head_tg.svg" alt="" class="svg">
                     </a>

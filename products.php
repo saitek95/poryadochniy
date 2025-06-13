@@ -82,7 +82,7 @@
             </div>
             <div class="sort_block">
                 <div class="sort">
-                    <a href="">По популярности <img src="assets/svg/arrow_sort.svg" alt=""></a>
+                    <a href="">По популярности <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
                     <ul class="sort_dropdown">
                         <li>
                             <a href="">По алфавиту</a>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="page_count_element">
                     <p class="name">Показывать по</p>
-                    <a href="">30 <img src="assets/svg/arrow_sort.svg" alt=""></a>
+                    <a href="">30 <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
                     <ul class="sort_dropdown">
                         <li>
                             <a href="">30</a>

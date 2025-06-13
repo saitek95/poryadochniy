@@ -58,25 +58,6 @@ $(document).on('click', '.overlay', function () {
     $('body').removeClass('no-overflow');
 })
 
-// $(document).on('click', '[data-modal="modal_cart"]', function () {
-//     $('.overlay').fadeIn(100);
-//     $('.modal_cart').fadeIn(100);
-//     $('body').addClass('no-overflow');
-// })
-
-// $(document).on('click', '#modal_callback_write', function (e) {
-//     e.preventDefault();
-//     $('.overlay').fadeIn(100);
-//     $('.modal_callback_write').fadeIn(100);
-//     $('body').addClass('no-overflow');
-// })
-
-// $(document).on('click', '#callback', function () {
-//     $('.overlay').fadeIn(100);
-//     $('.modal_callback_head').fadeIn(100);
-//     $('body').addClass('no-overflow');
-// })
-
 $(document).on('click', '[data-modal]', function (e) {
     e.preventDefault();
     const modalTarget = $(this).data('modal');
@@ -105,13 +86,6 @@ $(document).on('click', '[href="#show_more_prop"]', function () {
     $('li.card_hidden_props').fadeIn().css('display', 'flex');
     $(this).fadeOut();
 })
-
-// $(document).on('click', '#modal_auth', function () {
-//     $('.overlay').fadeIn(100);
-//     $('.modal_auth').fadeIn(100);
-//     $('body').addClass('no-overflow');
-// })
-
 function getActiveStepsContainer() {
     return $('.auth_content > div.active').find('[data-steps-container]');
 }
@@ -220,6 +194,13 @@ $(document).ready(function() {
         const windowWidth = $(window).width();
         const headMenu = $('header .menu');
         const lkBtn = $('.personal_lk .btn_green');
+        const orderForm = $('.order_fast .contact_info');
+
+        if(windowWidth < 1550) {
+            orderForm.insertAfter($('.order_fast .right_block'))
+        } else {
+            orderForm.insertAfter($('.basket-items-list-table'))
+        }
 
         if(windowWidth < 1440) {
             logoBlock.prependTo(headTopBlock);
@@ -254,6 +235,23 @@ $(document).ready(function() {
         } else {
             $('.favorites .top_block .sort p').text('Сортировать');
         }
+
+        if(windowWidth > 1440) {
+            const detailNewsSlider = new Swiper('.detail_news_slider_img', {
+                slidesPerView: 3,
+                spaceBetween: 16,
+                loop: true,
+                watchSlidesProgress: true,
+                slideVisibleClass: 'visible',
+                pagination: {
+                    el: '.pagination',
+                    clickable: true,
+                    currentClass: 'active',
+                    bulletClass: 'bullet',
+                    bulletActiveClass: 'bullet-active',
+                },
+            });
+        }
     }
 
     insertElHead();
@@ -279,33 +277,7 @@ $('.main_slide .slides').slick({
     nextArrow: '.main_slide .btn_next'
 })
 
-const detailNewsSlider = new Swiper('.detail_news_slider_img', {
-    loop: true,
-    watchSlidesProgress: true,
-    slideVisibleClass: 'visible',
-    pagination: {
-        el: '.pagination',
-        clickable: true,
-        currentClass: 'active',
-        bulletClass: 'bullet',
-        bulletActiveClass: 'bullet-active',
-    },
 
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1280: {
-            slidesPerView: 3,
-            spaceBetween: 16,
-        }
-    }
-});
 
 var productImgSliderThumb = new Swiper(".product_images_slider_thumb", {
     spaceBetween: 10,
