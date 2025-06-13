@@ -1,19 +1,8 @@
 <footer>
     <div class="max_width_theme">
-        <div class="top_block">
-            <div class="col">
-                <p class="title">Навигация</p>
-            </div>
-            <div class="col">
-                <p class="title">Контакты</p>
-            </div>
-            <a href="#up" class="btn_up">
-                <p class="name">Наверх</p>
-                <img src="assets/svg/btn_up.svg" alt="" class="svg">
-            </a>
-        </div>
-        <div class="bottom_block">
+        <div class="footer_nav">
             <div class="menu">
+                <p class="title">Навигация</p>
                 <ul>
                     <li>
                         <a href="">Оплата и доставка</a>
@@ -33,6 +22,7 @@
                 </ul>
             </div>
             <div class="contacts">
+                <p class="title">Контакты</p>
                 <ul>
                     <li>
                         <img src="assets/svg/bx-map.svg" alt="" class="svg">
@@ -48,6 +38,10 @@
                     </li>
                 </ul>
             </div>
+            <a href="#up" class="btn_up">
+                <p class="name">Наверх</p>
+                <img src="assets/svg/btn_up.svg" alt="" class="svg">
+            </a>
         </div>
         <div class="info_block">
             <a href="/" class="left_block">
