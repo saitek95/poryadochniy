@@ -193,7 +193,7 @@ $(document).ready(function() {
         const headTopBlock = $('header .top_block');
         const windowWidth = $(window).width();
         const headMenu = $('header .menu');
-        const lkBtn = $('.personal_lk .btn_green');
+        const lkBtn = $('.personal_lk .sidebar_menu .btn_green');
         const orderForm = $('.order_fast .contact_info');
 
         if(windowWidth < 1550) {
