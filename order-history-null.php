@@ -8,7 +8,7 @@
 </div>
 <div class="max_width_theme">
     <div class="personal_lk">
-        <div class="sidebar_menu">
+        <div class="sidebar_menu ">
             <ul>
                 <li>
                     <a href="">
