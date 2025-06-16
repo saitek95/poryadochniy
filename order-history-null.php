@@ -34,6 +34,7 @@
         <div class="null_order">
             <img src="assets/svg/shopping-cart_9771008%201.svg" alt="" class="svg">
             <p>К сожалению, вы еще не сделали ни один заказ</p>
+            <a href="" class="btn_green">Перейти в каталог</a>
         </div>
     </div>
 </div>

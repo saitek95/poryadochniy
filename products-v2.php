@@ -76,35 +76,48 @@
         </div>
     </div>
     <div class="right_block">
-        <div class="sort_block">
-            <div class="sort">
-                <a href="">По популярности <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
-                <ul class="sort_dropdown">
-                    <li>
-                        <a href="">По алфавиту</a>
-                    </li>
-                    <li>
-                        <a href="">Дешевле</a>
-                    </li>
-                    <li>
-                        <a href="">Дороже</a>
-                    </li>
-                </ul>
+        <div class="top_block">
+            <div class="btn_filter" data-modal="filter">
+                <img src="assets/svg/fi-rr-settings-sliders.svg" alt="" class="svg">
             </div>
-            <div class="page_count_element">
-                <p class="name">Показывать по</p>
-                <a href="">30 <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
-                <ul class="sort_dropdown">
-                    <li>
-                        <a href="">30</a>
-                    </li>
-                    <li>
-                        <a href="">50</a>
-                    </li>
-                    <li>
-                        <a href="">100</a>
-                    </li>
-                </ul>
+            <div class="sort_block">
+                <div class="sort">
+                    <a href="">По популярности <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
+                    <ul class="sort_dropdown">
+                        <li>
+                            <a href="">По алфавиту</a>
+                        </li>
+                        <li>
+                            <a href="">Дешевле</a>
+                        </li>
+                        <li>
+                            <a href="">Дороже</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_count_element">
+                    <p class="name">Показывать по</p>
+                    <a href="">30 <img src="assets/svg/arrow_sort.svg" alt="" class="svg"></a>
+                    <ul class="sort_dropdown">
+                        <li>
+                            <a href="">30</a>
+                        </li>
+                        <li>
+                            <a href="">50</a>
+                        </li>
+                        <li>
+                            <a href="">100</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="display_view_mode">
+                <a href="products.php" class="active">
+                    <img src="assets/svg/view_mode_1.svg" alt="" class="svg">
+                </a>
+                <a href="products-v2.php">
+                    <img src="assets/svg/view_mode_2.svg" alt="" class="svg">
+                </a>
             </div>
         </div>
         <div class="products_list">

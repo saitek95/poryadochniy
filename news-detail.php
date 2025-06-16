@@ -41,33 +41,15 @@
                 Созванивайтесь, болтайте, пойте и поздравляйте друг друга — хорошее настроение обеспечено.</p>
         </div>
         <div class="detail_news_slider_img">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" data-fancybox>
-                        <img src="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" data-fancybox>
-                        <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" data-fancybox>
-                        <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" data-fancybox>
-                        <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" data-fancybox>
-                        <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
-                    </a>
-                </div>
-            </div>
+            <a href="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" data-fancybox>
+                <img src="assets/img/2d0570e8800e144076020cf30c709b98bb8d416d.jpg" alt="">
+            </a>
+            <a href="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" data-fancybox>
+                <img src="assets/img/9ecb37af2315bcd1f97fa3496330660e1bd6f2dc.jpg" alt="">
+            </a>
+            <a href="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" data-fancybox>
+                <img src="assets/img/14248b941bb79c00d17dc6a57d130e15ddf292df.jpg" alt="">
+            </a>
         </div>
     </div>
     <h2>Другие новости</h2>

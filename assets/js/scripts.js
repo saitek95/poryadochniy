@@ -61,7 +61,13 @@ $(document).on('click', '.overlay', function () {
 $(document).on('click', '[data-modal]', function (e) {
     e.preventDefault();
     const modalTarget = $(this).data('modal');
-    const modal = $('.modals').find('.' + modalTarget);
+    let modal;
+    if(modalTarget == 'modal_callback_head') {
+        modal  = $('.callback_block_messengers').find('.' + modalTarget);
+    } else {
+        modal = $('.modals').find('.' + modalTarget);
+    }
+
     modal.fadeIn(100);
     if (modal.length) {
         $('.modals [class^="modal_"]').hide();
@@ -193,13 +199,16 @@ $(document).ready(function() {
         const headTopBlock = $('header .top_block');
         const windowWidth = $(window).width();
         const headMenu = $('header .menu');
-        const lkBtn = $('.personal_lk .btn_green');
+        const lkBtn = $('.personal_lk .sidebar_menu .btn_green');
         const orderForm = $('.order_fast .contact_info');
+        const deleteCart = $('.delete_cart');
 
         if(windowWidth < 1550) {
             orderForm.insertAfter($('.order_fast .right_block'))
+            deleteCart.insertBefore($('.basket-items-list-table'))
         } else {
             orderForm.insertAfter($('.basket-items-list-table'))
+            deleteCart.insertBefore($('.cart_info_total'))
         }
 
         if(windowWidth < 1440) {
@@ -220,7 +229,7 @@ $(document).ready(function() {
             headMenu.insertBefore('header .top_block .right_btns');
         }
 
-        if(windowWidth < 768) {
+        if(windowWidth < 769) {
             $('.sticker.bestsellers span').text('Хит');
             lkBtn.insertAfter('.personal_lk .content .banner_block');
             lkBtn.insertAfter('.history_order');
@@ -236,22 +245,22 @@ $(document).ready(function() {
             $('.favorites .top_block .sort p').text('Сортировать');
         }
 
-        if(windowWidth > 1440) {
-            const detailNewsSlider = new Swiper('.detail_news_slider_img', {
-                slidesPerView: 3,
-                spaceBetween: 16,
-                loop: true,
-                watchSlidesProgress: true,
-                slideVisibleClass: 'visible',
-                pagination: {
-                    el: '.pagination',
-                    clickable: true,
-                    currentClass: 'active',
-                    bulletClass: 'bullet',
-                    bulletActiveClass: 'bullet-active',
-                },
-            });
-        }
+        // if(windowWidth > 1440) {
+        //     const detailNewsSlider = new Swiper('.detail_news_slider_img', {
+        //         slidesPerView: 3,
+        //         spaceBetween: 16,
+        //         loop: true,
+        //         watchSlidesProgress: true,
+        //         slideVisibleClass: 'visible',
+        //         pagination: {
+        //             el: '.pagination',
+        //             clickable: true,
+        //             currentClass: 'active',
+        //             bulletClass: 'bullet',
+        //             bulletActiveClass: 'bullet-active',
+        //         },
+        //     });
+        // }
     }
 
     insertElHead();
